@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   FaTv,
@@ -82,11 +82,146 @@ const images = [
 const [currentSecond, setCurrentSecond] = useState(0);
 
 useEffect(() => {
-  const interval = setInterval(() => {
+  const interval1 = setInterval(() => {
     setCurrentSecond((prev) => (prev + 1) % secondImages.length);
   }, 3000); // auto-slide
-  return () => clearInterval(interval);
+  return () => clearInterval(interval1);
 }, []);
+
+
+
+
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const cards = [
+    {
+      image: "/ho1.webp",
+      title: "Pooja Movie Creations at Anupamaa",
+      shortText: "A memorable meetup of Pooja Movie Cre...",
+      fullText:
+        "A memorable meetup of Pooja Movie Creations at the popular TV show Anupamaa. Our collaboration highlighted strong brand visibility and impactful advertising reach across national audiences."
+    },
+    {
+      image: "/ho2.webp",
+      title: "Pooja Movie Creations at CID",
+      shortText: "Exclusive brand collaboration with TV stars...",
+      fullText:
+        "Exclusive brand collaboration with leading TV stars ensuring mass audience engagement and nationwide recognition for premium brand campaigns."
+    },
+    {
+      image: "/ho3.webp",
+      title: "Pooja Movie Creations on Crorepati Stage",
+      shortText: "High visibility advertising during prime time...",
+      fullText:
+        "High visibility advertising during prime time delivering unmatched audience impressions and strong ROI for brands across India."
+    },
+    {
+      image: "/ho4.webp",
+      title: "Pooja Movie Creations at Bigg Boss",
+      shortText: "Strategic event branding and promotions...",
+      fullText:
+        "Strategic event branding and promotions creating powerful brand awareness and consistent audience connection."
+    }
+  ];
+
+  const toggleText = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+
+
+
+  
+ const cards2 = [
+  {
+    image: "/hoa1.webp",
+    title: "Year: 2019"
+  },
+  {
+    image: "/hoa2.webp",
+    title: "Year: 2018"
+  },
+  {
+    image: "/hoa3.webp",
+    title: "Year: 2017"
+  },
+  {
+    image: "/hoa4.webp",
+    title: "Year: 2016"
+  }
+];
+
+
+ const cards3 = [
+  {
+    image: "/hc1.webp",
+    
+  },
+  {
+    image: "/hc2.webp",
+   
+  },
+  {
+    image: "/hc3.webp",
+    
+  },
+  {
+    image: "/hc4.webp",
+   
+  }
+];
+
+const cards4 = [
+  {
+    image: "/hg1.webp",
+    
+  },
+  {
+    image: "/hg2.webp",
+   
+  },
+  {
+    image: "/hg3.webp",
+    
+  },
+  {
+    image: "/hg5.webp",
+   
+  }
+];
+
+
+
+const sliderRef2 = useRef(null);
+
+useEffect(() => {
+  const slider = sliderRef2.current;
+  let animationFrame;
+  let scrollSpeed = 1;
+
+  const slide2 = () => {
+    if (!slider) return;
+
+    slider.scrollLeft += scrollSpeed;
+
+    // Infinite loop smooth reset
+    if (slider.scrollLeft >= slider.scrollWidth / 2) {
+      slider.scrollLeft = 0;
+    }
+
+    animationFrame = requestAnimationFrame(slide2);
+  };
+
+  slide2();
+
+  return () => cancelAnimationFrame(animationFrame);
+}, []);
+
+
+
+
+
 
   return (
 
@@ -238,17 +373,204 @@ useEffect(() => {
   <div className="slider1">
     <div
       className="slide-track1"
-      style={{ transform: `translateX(-${currentSecond * 210}px)` }} // 200px + 10px gap
+  style={{ transform: `translateX(-${currentSecond * 100}%)` }}
+
 
     >
-      {secondImages.map((img, index) => (
-        <div className="slide1" key={index}>
-          <img src={img} alt={`Ad ${index + 1}`} />
+      {secondImages.map((img, index1) => (
+        <div className="slide1" key={index1}>
+          <img src={img} alt={`Ad ${index1 + 1}`} />
         </div>
       ))}
     </div>
   </div>
 </section> */}
+
+
+ <section className="exclusive-media-section">
+      <h2 className="exclusive-heading">
+        OUR EXCLUSIVE ADVERTISING MEDIA
+      </h2>
+
+      <div className="exclusive-container">
+        {cards.map((card, index) => (
+          <div className="exclusive-card" key={index}>
+            <img src={card.image} alt={card.title} />
+
+            <h3>{card.title}</h3>
+
+            <p>
+              {activeIndex === index ? card.fullText : card.shortText}
+            </p>
+
+            <button
+              className="read-more-btn"
+              onClick={() => toggleText(index)}
+            >
+              {activeIndex === index ? "Show Less" : "Read More →"}
+            </button>
+          </div>
+        ))}
+      </div>
+
+        <div className="services-button1">
+    <Link to="/services" className="main-link1">
+     View More →
+    </Link>
+  </div>
+    </section>
+
+
+
+<section className="exclusive-media-section2">
+  <div className="exclusive-container2">
+    {cards2.map((card, index) => (
+      <div className="exclusive-card2" key={index}>
+        <img src={card.image} alt={card.title} />
+        <p>{card.title}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="services-button2">
+    <Link to="/services" className="main-link2">
+     View More →
+    </Link>
+  </div>
+</section>
+
+<section className="exclusive-media-section3">
+  <h2 className="exclusive-heading3">
+   Celebrities
+  </h2>
+  <div className="exclusive-container3">
+    {cards3.map((card, index) => (
+      <div className="exclusive-card3" key={index}>
+        <img src={card.image} alt={card.title} />
+        <p>{card.title}</p>
+      </div>
+    ))}
+  </div>
+
+  {/* <div className="services-button3">
+    <Link to="/services" className="main-link2">
+     View More →
+    </Link>
+  </div> */}
+</section>
+
+
+
+<section className="exclusive-media-section4">
+  <h2 className="exclusive-heading4">
+  Gallery
+  </h2>
+  <div className="exclusive-container4">
+    {cards4.map((card, index) => (
+      <div className="exclusive-card4" key={index}>
+        <img src={card.image} alt={card.title} />
+        <p>{card.title}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="services-button4">
+    <Link to="/services" className="main-link2">
+     View More
+    </Link>
+  </div>
+</section>
+
+
+
+{/* <section className="clients-section-main">
+  <h2 className="clients-heading-title">Our Clients</h2>
+
+  <div className="clients-slider-wrapper">
+    <div className="clients-slider-track" ref={sliderRef2}>
+      <img src="/hos1.webp" alt="Client" />
+      <img src="/hos2.webp" alt="Client" />
+      <img src="/hos3.webp" alt="Client" />
+      <img src="/hos4.webp" alt="Client" />
+      <img src="/hos5.webp" alt="Client" />
+
+     <img src="/hos1.webp" alt="Client" />
+      <img src="/hos2.webp" alt="Client" />
+      <img src="/hos3.webp" alt="Client" />
+      <img src="/hos4.webp" alt="Client" />
+      <img src="/hos5.webp" alt="Client" />
+    </div>
+  </div>
+</section> */}
+
+
+
+<section className="hotdeal-section">
+  <div className="hotdeal-container">
+
+    <h2 className="hotdeal-heading">🔥 Hot Deal Packages</h2>
+
+    <p className="hotdeal-subtext">
+      Choose the best package for your production needs
+    </p>
+
+    <div className="hotdeal-cards">
+
+      {/* Card 1 */}
+      <div className="hotdeal-card">
+        <h3 className="package-title">🎬 Basic Package</h3>
+        <h2 className="package-price">₹9,999</h2>
+
+        <ul className="package-features">
+          <li>✔ 2 Days Shooting</li>
+          <li>✔ Basic Editing</li>
+          <li>✔ HD Quality</li>
+          <li>✔ 3 Revisions</li>
+        </ul>
+
+        <a href="#" className="package-btn">Book Now</a>
+      </div>
+
+      {/* Card 2 */}
+      <div className="hotdeal-card">
+        <h3 className="package-title">🌟 Premium Package</h3>
+        <h2 className="package-price">₹24,999</h2>
+
+        <ul className="package-features">
+          <li>✔ 2 Days Shooting</li>
+          <li>✔ 4K Editing</li>
+          <li>✔ Drone Shots</li>
+          <li>✔ Unlimited Revisions</li>
+        </ul>
+
+        <a href="#" className="package-btn">Book Now</a>
+      </div>
+
+      {/* Card 3 */}
+      <div className="hotdeal-card">
+        <h3 className="package-title">🚀 Pro Package</h3>
+        <h2 className="package-price">₹49,999</h2>
+
+        <ul className="package-features">
+          <li>✔ 10 Days Shooting</li>
+          <li>✔ 4K Cinematic Editing</li>
+          <li>✔ Drone + Gimbal Shots</li>
+          <li>✔ Unlimited Revisions + Priority Support</li>
+        </ul>
+
+        <a href="#" className="package-btn">Book Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
 
 
