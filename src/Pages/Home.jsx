@@ -37,6 +37,57 @@ const services = [
   { icon: <FaAd />, title: "Digital Live Screen Advertising" }
 ];
 
+
+
+const images3 = [
+  "/hos1.webp",
+  "/hos2.webp",
+  "/hos3.webp",
+  "/hos4.webp",
+  "/hos5.webp",
+];
+
+
+
+const images4 = [
+  "/he1.webp",
+  "/he2.webp",
+  "/he3.webp",
+  "/he4.webp",
+  "/he5.webp",
+  "/he6.webp",
+  "/he7.webp",
+  "/he8.webp",
+  "/he9.webp",
+  "/he10.webp",
+];
+
+
+
+const images5 = [
+  "/hn1.webp",
+  "/hn2.webp",
+  "/hn3.webp",
+  "/hn4.webp",
+  "/hn5.webp",
+  "/hn6.webp",
+  "/hn7.webp",
+  "/hn8.webp",
+];
+
+
+
+
+const images6 = [
+  "/hnn1.webp",
+  "/hnn2.webp",
+  "/hnn3.webp",
+  // "/hnn4.webp",
+  "/hnn5.webp",
+  "/hnn6.webp",
+  "/hnn7.webp",
+];
+
 const Home = () => {
   // const [current, setCurrent] = useState(0);
 
@@ -226,7 +277,7 @@ useEffect(() => {
   return (
 
      <>
-    <section className="slider">
+    {/* <section className="slider">
       <div
         className="slider-track"
        style={{ transform: `translateX(-${current * 100}%)` }}
@@ -238,7 +289,7 @@ useEffect(() => {
           </div>
         ))}
       </div>
-    </section>
+    </section> */}
 
 
     <section className="about-section">
@@ -247,7 +298,7 @@ useEffect(() => {
 
       <div className="about-container">
 
-        {/* LEFT SIDE */}
+   
         <div className="about-left">
           <h3>18+ Years of Excellence in Ad Film Making & TV Broadcasting</h3>
 
@@ -265,19 +316,17 @@ useEffect(() => {
           </a>
         </div>
 
-        {/* RIGHT SIDE */}
+       
         <div className="about-right">
-  <div className="services-grid">
+  <div className="services-grid" >
     {services.map((service, index) => (
-      <div className="service-card" key={index}>
+      <div className="service-card" key={index} style={{background:"#111"}}>
         <div className="service-icon">{service.icon}</div>
         <h4 className="service-title">{service.title}</h4>
       </div>
     ))}
   </div>
 </div>
-
-
       </div>
     </section>
 
@@ -313,7 +362,7 @@ useEffect(() => {
     </div>
   </div>
 
-   {/* Link Outside Cards */}
+ 
   <div className="services-button">
     <Link to="/services" className="main-link">
      View All Services →
@@ -366,8 +415,56 @@ useEffect(() => {
   </div>
 </section>
 
+    <div className="slider-wrapper4">
+       <h2 className="slider-headin4" style={{textAlign:"center",fontSize:"3rem",color:"#f4b400"}}>Exclusive Advertising</h2>
+      <div className="slider4">
+        <div className="slide-track4">
+          {images4.concat(images4).map((img, index) => (
+            <div className="slide4" key={index}>
+              <img src={img} alt="slider" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
 
-{/* <section className="exclusive-section1">
+
+
+    
+ <div className="slider-wrapper5" style={{background:"#111"}}>
+       <h2 className="slider-headin5" style={{textAlign:"center",fontSize:"3rem",color:"#f4b400"}}>Premium Channels</h2>
+       <p style={{textAlign:"center", color:"#fff"}}>Apne brand ko top TV & OTT channels par showcase karein. Smooth slider me premium partner channels dekhein.</p>
+      <div className="slider5">
+        <div className="slide-track5">
+          {images5.concat(images5).map((img, index) => (
+            <div className="slide5" key={index}>
+              <img src={img} alt="slider" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div> 
+
+
+
+
+     
+    <div className="slider-wrapper6">
+       <h2 className="slider-heading6" style={{textAlign:"center"}}>News Channels</h2>
+       <p style={{textAlign:"center",color:"#fff"}}>Bharat ke top news channels par apna brand showcase karein.</p>
+      <div className="slider6">
+        <div className="slide-track6">
+          {images6.concat(images6).map((img, index) => (
+            <div className="slide6" key={index}>
+              <img src={img} alt="slider" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div> 
+
+
+ {/* <section className="exclusive-section1">
   <h2 className="exclusive-heading1">Exclusive Advertising</h2>
 
   <div className="slider1">
@@ -384,7 +481,7 @@ useEffect(() => {
       ))}
     </div>
   </div>
-</section> */}
+</section>  */}
 
 
  <section className="exclusive-media-section">
@@ -452,11 +549,7 @@ useEffect(() => {
     ))}
   </div>
 
-  {/* <div className="services-button3">
-    <Link to="/services" className="main-link2">
-     View More →
-    </Link>
-  </div> */}
+ 
 </section>
 
 
@@ -504,7 +597,20 @@ useEffect(() => {
 </section> */}
 
 
+    {/* <div className="slider-wrapper3">
+       <h2 className="slider-heading">Our Clients</h2>
+      <div className="slider3">
+        <div className="slide-track3">
+          {images3.concat(images3).map((img, index) => (
+            <div className="slide3" key={index}>
+              <img src={img} alt="slider" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div> */}
 
+ 
 <section className="hotdeal-section">
   <div className="hotdeal-container">
 
@@ -516,7 +622,7 @@ useEffect(() => {
 
     <div className="hotdeal-cards">
 
-      {/* Card 1 */}
+    
       <div className="hotdeal-card">
         <h3 className="package-title">🎬 Basic Package</h3>
         <h2 className="package-price">₹9,999</h2>
@@ -531,7 +637,7 @@ useEffect(() => {
         <a href="#" className="package-btn">Book Now</a>
       </div>
 
-      {/* Card 2 */}
+
       <div className="hotdeal-card">
         <h3 className="package-title">🌟 Premium Package</h3>
         <h2 className="package-price">₹24,999</h2>
@@ -546,7 +652,7 @@ useEffect(() => {
         <a href="#" className="package-btn">Book Now</a>
       </div>
 
-      {/* Card 3 */}
+    
       <div className="hotdeal-card">
         <h3 className="package-title">🚀 Pro Package</h3>
         <h2 className="package-price">₹49,999</h2>
@@ -563,7 +669,7 @@ useEffect(() => {
 
     </div>
   </div>
-</section>
+</section> 
 
 
 
