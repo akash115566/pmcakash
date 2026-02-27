@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.about-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("/ab1.webp") no-repeat center center/cover;
+
+  /* 🔥 Break layout width */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  padding-top: 80px; /* navbar height adjust */
+}
+
+.about-content {
+  color: #fff;
+  max-width: 600px;
+  padding-left: 80px;
+}
+
+.about-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #f1f1f1;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .about-content {
+    padding-left: 40px;
+    max-width: 500px;
+  }
+
+  .about-content h1 {
+    font-size: 36px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .about-content h1 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+.about-info-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.about-info-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* LEFT */
+.about-left {
+  flex: 1;
+}
+
+.about-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-left p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* RIGHT */
+.about-right {
+  flex: 1;
+  background: #fff;
+  padding: 40px;
+  border-left: 5px solid #d4af37;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.about-right h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-right p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .about-info-container {
+    gap: 30px;
+  }
+
+  .about-left h2,
+  .about-right h2 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-info-container {
+    flex-direction: column;
+  }
+
+  .about-right {
+    border-left: none;
+    border-top: 5px solid #d4af37;
+  }
+}

@@ -23,8 +23,8 @@ const Navbar = () => {
         {/* Right Side Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/service">Services</a></li>
           <li><a href="#">Work</a></li>
           <li><a href="#">Awards</a></li>
           <li><a href="#">Gallery</a></li>
