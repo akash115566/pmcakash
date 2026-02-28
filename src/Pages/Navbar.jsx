@@ -21,17 +21,17 @@ const Navbar = () => {
         </div>
 
         {/* Right Side Links */}
-        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="#">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/service">Services</a></li>
-          <li><a href="/work">Work</a></li>
-          <li><a href="#">Awards</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
-          <li className="quote-btn"><a href="#">Get a Quote</a></li>
-        </ul>
+       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/about">About Us</Link></li>
+  <li><Link to="/service">Services</Link></li>
+  <li><Link to="/work">Work</Link></li>
+  <li><Link to="#">Awards</Link></li>
+  <li><Link to="#">Gallery</Link></li>
+  <li><Link to="#">Clients</Link></li>
+  <li><Link to="#">Contact</Link></li>
+  <li className="quote-btn"><Link to="#">Get a Quote</Link></li>
+</ul>
 
       </div>
     </nav>
