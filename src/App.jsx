@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "../src/Pages/ScrollToTop";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Navbar from "../src/Pages/Navbar";
-import Home from "../src/Pages/Home";
-import About from "../src/Pages/About";
-import Service from "../src/Pages/Service";
-import Work from "../src/Pages/Work";
+import Home from "./src/Pages/Home";
+import About from "./src/Pages/About";
+import Service from "./src/Pages/Service";
+import Work from "./Pages/Work"
 
 
 const App = () => {
