@@ -7,6 +7,7 @@ import Navbar from "../src/Pages/Navbar";
 import Home from "../src/Pages/Home";
 import About from "../src/Pages/About";
 import Service from "../src/Pages/Service";
+import Work from "../src/Pages/Work";
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
            <Route path="/" element={<Home />} />
              <Route path="/about" element={<About />} />
                <Route path="/service" element={<Service />} />
+                <Route path="/work" element={<Work />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
