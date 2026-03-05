@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.awards-section{
+  padding:80px 20px;
+  background:#f9f9f9;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Heading */
+
+.awards-heading{
+  text-align:center;
+  font-size:40px;
+  font-weight:700;
+  margin-bottom:60px;
+}
+
+/* Grid */
+
+.awards-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* Card */
+
+.award-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:all 0.4s ease;
+}
+
+/* Image */
+
+.award-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* Year */
+
+.award-card h3{
+  margin-top:15px;
+  font-size:22px;
+  font-weight:600;
+}
+
+/* Zig Zag Hover Effect */
+
+.award-card:hover{
+  animation:zigzag 0.5s ease;
+}
+
+@keyframes zigzag{
+  0%{ transform:translateX(0); }
+  25%{ transform:translateX(-8px); }
+  50%{ transform:translateX(8px); }
+  75%{ transform:translateX(-6px); }
+  100%{ transform:translateX(0); }
+}
+
+/* Responsive */
+
+@media (max-width:992px){
+  .awards-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:600px){
+  .awards-grid{
+    grid-template-columns:1fr;
+  }
+
+  .awards-heading{
+    font-size:30px;
+  }
+}
+
+
+.events-section{
+  padding:80px 20px;
+  background:#f8f8f8;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Heading */
+
+.events-heading{
+  text-align:center;
+  font-size:40px;
+  font-weight:700;
+  margin-bottom:60px;
+}
+
+/* Grid */
+
+.events-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* Card */
+
+.event-card{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.event-card:hover{
+  transform:translateY(-8px);
+}
+
+/* Video */
+
+.event-card iframe{
+  width:100%;
+  height:200px;
+  border:none;
+  display:block;
+}
+
+/* Title */
+
+.event-card h3{
+  text-align:center;
+  padding:15px;
+  font-size:20px;
+}
+
+/* Responsive */
+
+@media (max-width:992px){
+
+  .events-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media (max-width:600px){
+
+  .events-grid{
+    grid-template-columns:1fr;
+  }
+
+  .events-heading{
+    font-size:28px;
+  }
+
+}

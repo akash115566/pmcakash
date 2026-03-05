@@ -8,6 +8,8 @@ import Home from "../src/Pages/Home";
 import About from "../src/Pages/About";
 import Service from "../src/Pages/Service";
 import Work from "../src/Pages/Work";
+import Award from "./Pages/Award";
+import Gallery from "./Pages/Gallery";
 
 
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
              <Route path="/about" element={<About />} />
                <Route path="/service" element={<Service />} />
                 <Route path="/work" element={<Work />} />
+                  <Route path="/award" element={<Award />} />
+                  <Route path="/gallery" element={<Gallery />} />
         </Routes>
         {/* <Footer /> */}
       </Router>

@@ -27,8 +27,8 @@ const Navbar = () => {
   <li><Link to="/about">About Us</Link></li>
   <li><Link to="/service">Services</Link></li>
   <li><Link to="/work">Work</Link></li>
-  <li><Link to="#">Awards</Link></li>
-  <li><Link to="#">Gallery</Link></li>
+  <li><Link to="/award">Awards</Link></li>
+  <li><Link to="/gallery">Gallery</Link></li>
   <li><Link to="#">Clients</Link></li>
   <li><Link to="#">Contact</Link></li>
   <li className="quote-btn"><Link to="#">Get a Quote</Link></li>
