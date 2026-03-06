@@ -10,6 +10,8 @@ import Service from "../src/Pages/Service";
 import Work from "../src/Pages/Work";
 import Award from "./Pages/Award";
 import Gallery from "./Pages/Gallery";
+import Client from "./Pages/Client";
+import Contact from "./Pages/Contact";
 
 
 const App = () => {
@@ -25,6 +27,8 @@ const App = () => {
                 <Route path="/work" element={<Work />} />
                   <Route path="/award" element={<Award />} />
                   <Route path="/gallery" element={<Gallery />} />
+                     <Route path="/client" element={<Client />} />
+                       <Route path="/contact" element={<Contact />} />
         </Routes>
         {/* <Footer /> */}
       </Router>

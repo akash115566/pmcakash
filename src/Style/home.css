@@ -113,11 +113,11 @@ html, body, #root {
   margin-bottom: 20px;
 }
 
-.about-left p {
+.about-left p{
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #fff;
+  color: #5b0f0f;
 }
 
 .read-more {
@@ -965,13 +965,13 @@ box-shadow: 0 2px 8px #f4b400;
 
 .exclusive-card img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .exclusive-card h3 {
-  margin: 15px 20px 0px;
+  margin: 0px;
   font-size: 18px;
   font-weight: 600;
 }

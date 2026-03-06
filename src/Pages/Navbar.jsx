@@ -29,8 +29,8 @@ const Navbar = () => {
   <li><Link to="/work">Work</Link></li>
   <li><Link to="/award">Awards</Link></li>
   <li><Link to="/gallery">Gallery</Link></li>
-  <li><Link to="#">Clients</Link></li>
-  <li><Link to="#">Contact</Link></li>
+  <li><Link to="/client">Clients</Link></li>
+  <li><Link to="/contact">Contact</Link></li>
   <li className="quote-btn"><Link to="#">Get a Quote</Link></li>
 </ul>
 
