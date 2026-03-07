@@ -317,7 +317,7 @@ const Home = () => {
           </div>
 
 
-          <div className="about-right">
+          <div className="about-right" style={{background:"#111"}}>
             <div className="services-grid" >
               {services.map((service, index) => (
                 <div className="service-card" key={index} style={{ background: "#111" }}>

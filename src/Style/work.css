@@ -51,7 +51,43 @@
   .work-grid {
     grid-template-columns: 1fr;
   }
+
 }
+/* ===== 480px ===== */
+@media (max-width: 480px) {
+  .work-title {
+    font-size: 2.2rem;
+  }
+
+  .work-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* ===== 360px ===== */
+@media (max-width: 360px) {
+  .work-title {
+    margin-top: opx;
+    font-size: 1.8rem;
+  }
+
+  .work-description {
+    font-size: 13px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+
 
 .featured-section {
   text-align: center;
