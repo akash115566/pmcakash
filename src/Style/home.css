@@ -34,16 +34,18 @@ html, body, #root {
 /* Image */
 .slide img {
   width: 100%;
-  height: auto;        /* image cut nahi hogi */
-  max-height: 800px;   /* desktop ke liye */
-  object-fit: contain; /* full image show */
+  height: 600px;        /* image cut nahi hogi */
+  max-height: 600px;   /* desktop ke liye */
+  object-fit: cover; /* full image show */
   display: block;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .slide img {
-    max-height: 600px;
+    max-height: 800px;
   }
 }
 
