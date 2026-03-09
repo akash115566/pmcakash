@@ -63,42 +63,41 @@ html, body, #root {
 /* Small Mobile */
 @media (max-width: 360px) {
   .slide img {
-    height: 250px;
     width: auto;
+    height: 250px;
   }
 }
 
 /* ============================= */
 /* 💻 Large Screens (1200px+) */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .slide {
     height: 550px;
   }
 }
 
-/* 💻 Laptop */
+
 @media (max-width: 1024px) {
   .slide {
     height: 420px;
   }
 }
 
-/* 📱 Tablet */
+
 @media (max-width: 768px) {
   .slide {
     height: 320px;
   }
 }
 
-/* 📱 Mobile */
+
 @media (max-width: 480px) {
   .slide {
     height: 220px;
   }
 }
 
-/* 📱 Small Mobile */
-/* 📱 Small Mobile */
+
 @media (max-width: 360px) {
 
   .slide {
@@ -112,7 +111,7 @@ html, body, #root {
 
   }
 
-}
+} */
 
 
 
