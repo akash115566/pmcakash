@@ -16,7 +16,24 @@ import {
 import "../Style/home.css";
 
 
-
+ 
+const data = [
+  {
+    title: "Tv Advt Agency",
+    text: "We are a leading TV Advertising Agency helping brands reach millions of viewers across India through powerful television campaigns and creative marketing strategies.",
+    img: "/ht1.jfif"
+  },
+  {
+    title: "Best Production House",
+    text: "Our production house creates high quality TV commercials, corporate films and brand videos using modern technology and creative storytelling.",
+    img: "/ht2.jfif"
+  },
+  {
+    title: "Best Media House",
+    text: "We provide complete media solutions including advertising planning, broadcasting and brand promotions to help businesses grow faster.",
+    img: "/ht3.jfif"
+  }
+];
 
 
 
@@ -277,7 +294,7 @@ const Home = () => {
   return (
 
     <>
-      {/* <section className="slider">
+      <section className="slider">
       <div
         className="slider-track"
        style={{ transform: `translateX(-${current * 100}%)` }}
@@ -289,7 +306,31 @@ const Home = () => {
           </div>
         ))}
       </div>
-    </section> */}
+    </section>
+
+      <section className="agency-section">
+
+      {data.map((item, index) => (
+        <div className="agency-box" key={index}>
+          
+          <h2 className="agency-heading">{item.title}</h2>
+
+          <div className="agency-content">
+
+            <div className="agency-text">
+              <p>{item.text}</p>
+            </div>
+
+            <div className="agency-image">
+              <img src={item.img} alt={item.title} />
+            </div>
+
+          </div>
+
+        </div>
+      ))}
+
+    </section>
 
 
       <section className="about-section">
