@@ -116,22 +116,24 @@ const Home = () => {
   //   return () => clearInterval(interval);
   // }, []);
 
-  const images = [
-    "/hsl1.webp",
-    "/hsl2.webp",
-    "/hsl3.webp",
-    "/hsl4.webp",
-    "/hsl5.webp",
-    "/hsl6.webp",
-    "/hsl7.webp",
-    "/hsl8.webp",
-  ];
+  
+
+const slides1 = [
+  { img: "/hsl1.webp", heading: "Best Production House" },
+  { img: "/hsl2.webp", heading: "Best Media House" },
+  { img: "/hsl3.webp", heading: "Best Broadcast Company" },
+  { img: "/hsl4.webp", heading: "Best Tv ad film Making company" },
+  { img: "/hsl5.webp", heading: "BEST PR ADVERTISING COMPANY" },
+  { img: "/hsl6.webp", heading: "Corporate Advertising" },
+  { img: "/hsl7.webp", heading: "Media & Broadcasting" },
+  { img: "/hsl8.webp", heading: "Ad Film Production" }
+];
 
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
+     setCurrent((prev) => (prev + 1) % slides1.length);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -294,19 +296,24 @@ const Home = () => {
   return (
 
     <>
-      <section className="slider">
-      <div
-        className="slider-track"
-       style={{ transform: `translateX(-${current * 100}%)` }}
+    <section className="slider">
+  <div
+    className="slider-track"
+    style={{ transform: `translateX(-${current * 100}%)` }}
+  >
+    {slides1.map((slide, index) => (
+      <div className="slide" key={index}>
+        
+        <img src={slide.img} alt="slide" />
 
-      >
-        {images.map((img, index) => (
-          <div key={index} className="slide">
-            <img src={img} alt="slide" />
-          </div>
-        ))}
+        <div className="slide-content">
+          <h2>{slide.heading}</h2>
+        </div>
+
       </div>
-    </section>
+    ))}
+  </div>
+</section>
 
       <section className="agency-section">
 
@@ -352,9 +359,9 @@ const Home = () => {
               of people across India.
             </p>
 
-            <a href="#" className="read-more">
+            <Link to="/about" className="read-more">
               Read More →
-            </a>
+            </Link>
           </div>
 
 
@@ -405,7 +412,7 @@ const Home = () => {
 
 
         <div className="services-button">
-          <Link to="/services" className="main-link">
+          <Link to="/service" className="main-link">
             View All Services →
           </Link>
         </div>
@@ -552,7 +559,7 @@ const Home = () => {
         </div>
 
         <div className="services-button1">
-          <Link to="/services" className="main-link1">
+          <Link to="/work" className="main-link1">
             View More →
           </Link>
         </div>
@@ -571,7 +578,7 @@ const Home = () => {
         </div>
 
         <div className="services-button2">
-          <Link to="/services" className="main-link2">
+          <Link to="/award" className="main-link2">
             View More →
           </Link>
         </div>
@@ -609,7 +616,7 @@ const Home = () => {
         </div>
 
         <div className="services-button4">
-          <Link to="/services" className="main-link2">
+          <Link to="/gallery" className="main-link2">
             View More
           </Link>
         </div>
