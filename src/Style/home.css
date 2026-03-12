@@ -30,6 +30,7 @@ html, body, #root {
 .slide img {
   width: 100%;
   display: block;
+  height: 600px;
 }
 
 .slide-content {
@@ -702,7 +703,7 @@ box-shadow: 0 2px 8px #f4b400;
 
 @media (max-width: 480px) {
    .slider-wrapper4{
-    width: 300px;
+    width: 450px;
   }
   .slide4 {
     width: 180px;
@@ -717,13 +718,7 @@ box-shadow: 0 2px 8px #f4b400;
   .slider-heading4 {
     font-size: 22px;
   }
-
-  .slide-track4 {
-    gap: 15px;
-    animation: scroll4 18s linear infinite;
-  }
 }
-
 @media (max-width: 360px) {
   .slider-wrapper4{
     padding: 0px;
@@ -847,7 +842,7 @@ box-shadow: 0 2px 8px #f4b400;
 
 @media (max-width: 480px) {
    .slider-wrapper5{
-    width: 300px;
+    width: 450px;
   }
   .slide5 {
     width: 180px;
@@ -992,7 +987,7 @@ box-shadow: 0 2px 8px #f4b400;
 
 @media (max-width: 480px) {
    .slider-wrapper6{
-    width: 300px;
+    width: 450px;
   }
   .slide6 {
     width: 180px;
