@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   FaTv,
   FaFilm,
@@ -38,21 +38,6 @@ const data = [
 
 
 
-
-const services = [
-  { icon: <FaTv />, title: "TV Advertising" },
-  { icon: <FaFilm />, title: "TVC Making" },
-  { icon: <FaVideo />, title: "TV Ad Film Production" },
-  { icon: <FaVideo />, title: "Web Series Production" },
-  { icon: <FaBuilding />, title: "Corporate Film Production" },
-  { icon: <FaBullhorn />, title: "Radio FM Advertising" },
-  { icon: <FaFilm />, title: "PVR Cinemas Advertising" },
-  { icon: <FaPlane />, title: "Airport Advertising" },
-  { icon: <FaBullhorn />, title: "Hoardings Advertising" },
-  { icon: <FaSubway />, title: "Metro Advertising" },
-  { icon: <FaPrint />, title: "Print Advertising" },
-  { icon: <FaAd />, title: "Digital Live Screen Advertising" }
-];
 
 
 
@@ -106,6 +91,22 @@ const images6 = [
 ];
 
 const Home = () => {
+
+    const navigate = useNavigate();
+const services = [
+  { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
+  { icon: <FaFilm />, title: "TVC Making", link: "/tvc-making" },
+  { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tv-ad-film" },
+  { icon: <FaVideo />, title: "Web Series Production", link: "/web-series" },
+  { icon: <FaBuilding />, title: "Corporate Film Production", link: "/corporate-film" },
+  { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
+  { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
+  { icon: <FaPlane />, title: "Airport Advertising", link: "/airport-advertising" },
+  { icon: <FaBullhorn />, title: "Hoardings Advertising", link: "/hoardings" },
+  { icon: <FaSubway />, title: "Metro Advertising", link: "/metro-advertising" },
+  { icon: <FaPrint />, title: "Print Advertising", link: "/print-advertising" },
+  { icon: <FaAd />, title: "Digital Live Screen Advertising", link: "/digital-screen" }
+];
   // const [current, setCurrent] = useState(0);
 
   // useEffect(() => {
@@ -340,43 +341,50 @@ const slides1 = [
     </section>
 
 
-      <section className="about-section">
+    <section className="about-section">
 
-        <h2 className="section-title">About & Services</h2>
+  <h2 className="section-title">About & Services</h2>
 
-        <div className="about-container">
+  <div className="about-container">
+
+    <div className="about-left">
+      <h3>18+ Years of Excellence in Ad Film Making & TV Broadcasting</h3>
+
+      <img src="/h1.webp" alt="About" />
+
+      <p style={{ color: "#fff" }}>
+        Pooja Movie Creations is a pioneer in the world of Ad Film Making
+        and TV Broadcasting. For over 18 years, we have been creating
+        impactful advertising solutions that connect brands with millions
+        of people across India.
+      </p>
+
+      <Link to="/about" className="read-more">
+        Read More →
+      </Link>
+    </div>
 
 
-          <div className="about-left">
-            <h3>18+ Years of Excellence in Ad Film Making & TV Broadcasting</h3>
+    <div className="about-right" style={{ background: "#111" }}>
+      <div className="services-grid">
 
-            <img src="/h1.webp" alt="About" />
-
-            <p style={{color:"#fff"}}>
-              Pooja Movie Creations is a pioneer in the world of Ad Film Making
-              and TV Broadcasting. For over 18 years, we have been creating
-              impactful advertising solutions that connect brands with millions
-              of people across India.
-            </p>
-
-            <Link to="/about" className="read-more">
-              Read More →
-            </Link>
+        {services.map((service, index) => (
+          <div
+            className="service-card"
+            key={index}
+            style={{ background: "#111", cursor: "pointer" }}
+            onClick={() => navigate(service.link)}
+          >
+            <div className="service-icon">{service.icon}</div>
+            <h4 className="service-title">{service.title}</h4>
           </div>
+        ))}
 
+      </div>
+    </div>
 
-          <div className="about-right" style={{background:"#111"}}>
-            <div className="services-grid" >
-              {services.map((service, index) => (
-                <div className="service-card" key={index} style={{ background: "#111" }}>
-                  <div className="service-icon">{service.icon}</div>
-                  <h4 className="service-title">{service.title}</h4>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
 
 
 

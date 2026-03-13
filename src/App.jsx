@@ -12,6 +12,7 @@ import Award from "./Pages/Award";
 import Gallery from "./Pages/Gallery";
 import Client from "./Pages/Client";
 import Contact from "./Pages/Contact";
+import TvAdd from "./Pages/TvAdd";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
                   <Route path="/gallery" element={<Gallery />} />
                      <Route path="/client" element={<Client />} />
                        <Route path="/contact" element={<Contact />} />
+                          <Route path="/tvadd" element={<TvAdd />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
