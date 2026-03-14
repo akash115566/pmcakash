@@ -328,3 +328,179 @@ font-size:26px;
 }
 
 }
+
+
+
+.tvcservices-section{
+width:100%;
+padding:80px 6%;
+background:#0b0b0b;
+text-align:center;
+}
+
+.tvcservices-title{
+font-size:34px;
+color:#f5b300;
+margin-bottom:50px;
+}
+
+/* grid */
+
+.tvcservices-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+/* card */
+
+.service-card{
+background:#111;
+padding:30px 20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+.service-icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.service-card h3{
+font-size:20px;
+color:#f5b300;
+margin-bottom:10px;
+}
+
+.service-card p{
+font-size:15px;
+color:#ccc;
+line-height:1.6;
+}
+
+/* tablet */
+
+@media(max-width:900px){
+
+.tvcservices-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* mobile */
+
+@media(max-width:600px){
+
+.tvcservices-grid{
+grid-template-columns:1fr;
+}
+
+.tvcservices-title{
+font-size:26px;
+}
+
+.service-card{
+padding:25px 15px;
+}
+
+}
+
+
+
+.channels-section{
+width:100%;
+padding:70px 6%;
+background:#0b0b0b;
+text-align:center;
+overflow:hidden;
+}
+
+.channels-title{
+font-size:34px;
+color:#f5b300;
+margin-bottom:40px;
+}
+
+/* slider container */
+
+.logo-slider{
+width:100%;
+overflow:hidden;
+position:relative;
+}
+
+/* track */
+
+.logo-track{
+display:flex;
+width:max-content;
+animation:scroll 20s linear infinite;
+}
+
+/* logo card */
+
+.logo-card{
+flex:0 0 auto;
+padding:0 40px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.logo-card img{
+height:45px;
+filter:brightness(0.9);
+transition:0.3s;
+}
+
+.logo-card img:hover{
+transform:scale(1.1);
+}
+
+/* animation */
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+/* tablet */
+
+@media(max-width:900px){
+
+.logo-card img{
+height:35px;
+}
+
+}
+
+/* mobile */
+
+@media(max-width:600px){
+
+.channels-title{
+font-size:26px;
+}
+
+.logo-card{
+padding:0 25px;
+}
+
+.logo-card img{
+height:28px;
+}
+
+}

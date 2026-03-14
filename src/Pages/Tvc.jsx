@@ -110,6 +110,78 @@ text:"A promotional ad film tailored for events and marketing campaigns, engagin
 
 
 
+const services = [
+{
+icon:"📖",
+title:"Scriptwriting",
+text:"Creative scripts written to connect with your target audience."
+},
+
+{
+icon:"🎥",
+title:"Cinematography",
+text:"High-end cameras & modern techniques for cinematic visuals."
+},
+
+{
+icon:"🎬",
+title:"Direction",
+text:"Expert directors ensure every frame has impact & meaning."
+},
+
+{
+icon:"👩‍🎤",
+title:"Casting",
+text:"Selecting professional actors/models to represent your brand."
+},
+
+{
+icon:"🎨",
+title:"Set & Art Design",
+text:"Custom-built sets with professional art direction."
+},
+
+{
+icon:"💄",
+title:"Makeup & Styling",
+text:"High-quality styling, wardrobe & professional makeup."
+},
+
+{
+icon:"✂️",
+title:"Editing & VFX",
+text:"Post-production with editing, sound design & color grading."
+},
+
+{
+icon:"📺",
+title:"Multi-Platform Ads",
+text:"Distribution across TV, OTT & Digital platforms."
+},
+
+{
+icon:"🎯",
+title:"Brand Strategy",
+text:"We help brands create the right message & positioning before production."
+}
+];
+
+
+
+
+const logos = [
+"/tm21.webp",
+"/tm22.webp",
+"/tm23.webp",
+"/tm24.webp",
+"/tm25.webp",
+"/tm26.webp",
+"/tm27.webp",
+"/tm28.webp",
+"/tm29.webp",
+];
+
+
 
 return (
 <>
@@ -249,6 +321,58 @@ allowFullScreen
 
 </div>
 ))}
+
+</div>
+
+</section>
+
+
+<section className="tvcservices-section">
+
+<h2 className="tvcservices-title">
+Our Complete TVC Services
+</h2>
+
+<div className="tvcservices-grid">
+
+{services.map((item,index)=>(
+
+<div className="service-card" key={index}>
+
+<div className="service-icon">
+{item.icon}
+</div>
+
+<h3>{item.title}</h3>
+
+<p>{item.text}</p>
+
+</div>
+
+))}
+
+</div>
+
+</section>
+
+
+<section className="channels-section">
+
+<h2 className="channels-title">
+Channels & Platforms
+</h2>
+
+<div className="logo-slider">
+
+<div className="logo-track">
+
+{logos.concat(logos).map((logo,index)=>(
+<div className="logo-card" key={index}>
+<img src={logo} alt="channel"/>
+</div>
+))}
+
+</div>
 
 </div>
 
