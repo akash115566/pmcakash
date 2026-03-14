@@ -95,7 +95,7 @@ const Home = () => {
     const navigate = useNavigate();
 const services = [
   { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
-  { icon: <FaFilm />, title: "TVC Making", link: "/tvc-making" },
+  { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
   { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tv-ad-film" },
   { icon: <FaVideo />, title: "Web Series Production", link: "/web-series" },
   { icon: <FaBuilding />, title: "Corporate Film Production", link: "/corporate-film" },
@@ -263,6 +263,24 @@ const slides1 = [
   ];
 
 
+  const images9 = [
+  "/hs21.webp",
+  "/hs22.webp",
+  "/hs23.webp",
+  "/hs24.webp",
+  "/hs25.webp",
+  "/hs26.webp",
+  "/hs27.webp",
+  "/hs28.webp",
+  "/hs29.webp",
+  "/hs30.webp",
+   "/hs31.webp",
+  "/hs32.webp",
+  "/hs33.webp",
+  "/hs34.webp",
+];
+
+
 
   const sliderRef2 = useRef(null);
 
@@ -341,77 +359,84 @@ const slides1 = [
     </section>
 
 
-    <section className="about-section">
+    <section className="services-section" style={{backgroundColor:"#111"}}>
 
-  <h2 className="section-title">About & Services</h2>
+      <h2 className="section-heading">
+       About & Services
+      </h2>
 
-  <div className="about-container">
+      <div className="services-container">
 
-    <div className="about-left">
-      <h3>18+ Years of Excellence in Ad Film Making & TV Broadcasting</h3>
+        {/* LEFT SIDE */}
 
-      <img src="/h1.webp" alt="About" />
+        <div className="services-left">
 
-      <p style={{ color: "#fff" }}>
-        Pooja Movie Creations is a pioneer in the world of Ad Film Making
-        and TV Broadcasting. For over 18 years, we have been creating
-        impactful advertising solutions that connect brands with millions
-        of people across India.
-      </p>
+          <h3>
+            18+ Years of Excellence in Ad Film Making & TV Broadcasting
+          </h3>
 
-      <Link to="/about" className="read-more">
-        Read More →
-      </Link>
-    </div>
+          <img src="/h1.webp" alt="advertising" />
+
+          <p>
+          Pooja Movie Creations is a pioneer in the world of Ad Film Making and TV Broadcasting.
+For over 18 years, we have been creating impactful advertising solutions that connect brands with millions of...
+          </p>
+        <Link to="/about" className="read-more-btn">
+  Read More →
+</Link>
+
+        </div>
 
 
-    <div className="about-right" style={{ background: "#111" }}>
-      <div className="services-grid">
+        {/* RIGHT SIDE */}
 
-        {services.map((service, index) => (
-          <div
-            className="service-card"
-            key={index}
-            style={{ background: "#111", cursor: "pointer" }}
-            onClick={() => navigate(service.link)}
-          >
-            <div className="service-icon">{service.icon}</div>
-            <h4 className="service-title">{service.title}</h4>
-          </div>
-        ))}
+        <div className="services-right" style={{backgroundColor:"#111"}}>
+
+          {services.map((service, index) => (
+
+            <a href={service.link} className="service-card" key={index} style={{backgroundColor:"#111"}}>
+
+              <div className="icon">
+                {service.icon}
+              </div>
+
+              <h4>{service.title}</h4>
+
+            </a>
+
+          ))}
+
+        </div>
 
       </div>
-    </div>
 
-  </div>
-</section>
+    </section>
 
 
 
+      <section className="services-section1" style={{backgroundColor:"#111"}}>
+        <h2 className="services-heading1">Our Services</h2>
 
-      <section className="services-section">
-        <h2 className="services-heading">Our Services</h2>
-
-        <div className="services-container">
-          <div className="service-card">
+        <div className="services-container1">
+          <div className="service-card1">
             <img src="/hs1.webp" alt="Service 1" />
             <h3>TV Advertising</h3>
             <p>Expand your brand’s reach with Pooja Movie Creations’ TV Advertising. With nationwide visibility and unmatched influence, television remains...</p>
           </div>
 
-          <div className="service-card">
+          <div className="service-card1">
             <img src="/hs2.webp" alt="Service 2" />
             <h3>TVC Making</h3>
             <p>Bring your brand vision to life with Pooja Movie Creations’ TVC Making. From concept ideation to full-scale production, we create powe...</p>
           </div>
 
-          <div className="service-card">
+          <div className="service-card1">
             <img src="/hs3.webp" alt="Service 3" />
             <h3>TV Ad Film Production</h3>
             <p>Make your brand unforgettable with Pooja Movie Creations’ TV Ad Film Production. From creative concepts to cinematic...</p>
           </div>
 
-          <div className="service-card">
+          <div className="service-card1">
             <img src="/hs4.webp" alt="Service 4" />
             <h3>Web Series Production</h3>
             <p>Bring stories to life with Pooja Movie Creations’ Web Series Production. From concept development to high-quality execution, we create engagin...</p>
@@ -419,8 +444,8 @@ const slides1 = [
         </div>
 
 
-        <div className="services-button">
-          <Link to="/service" className="main-link">
+        <div className="services-button1">
+          <Link to="/service" className="main-link1">
             View All Services →
           </Link>
         </div>
@@ -593,7 +618,7 @@ const slides1 = [
       </section>
 
       <section className="exclusive-media-section3">
-        <h2 className="exclusive-heading3">
+        <h2 className="exclusive-heading3" >
           Celebrities
         </h2>
         <div className="exclusive-container3">
@@ -666,6 +691,20 @@ const slides1 = [
       </div>
     </div> */}
 
+
+
+   <div className="slider-wrapper9">
+        <h2 className="slider-headin9" style={{ textAlign: "center", fontSize: "3rem", color: "#f4b400" }}>Our Clients</h2>
+        <div className="slider9">
+          <div className="slide-track9">
+            {images9.concat(images4).map((img, index) => (
+              <div className="slide9" key={index}>
+                <img src={img} alt="slider" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <section className="hotdeal-section">
         <div className="hotdeal-container">
