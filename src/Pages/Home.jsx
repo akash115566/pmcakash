@@ -97,7 +97,7 @@ const Home = () => {
 const services = [
   { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
   { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
-  { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tv-ad-film" },
+  { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvadfilm" },
   { icon: <FaVideo />, title: "Web Series Production", link: "/web-series" },
   { icon: <FaBuilding />, title: "Corporate Film Production", link: "/corporate-film" },
   { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
@@ -400,17 +400,17 @@ const slides1 = [
     </section>
 
 
-    <section className="services-section" style={{backgroundColor:"#111"}}>
+    <section className="services-section2" style={{backgroundColor:"#111"}}>
 
-      <h2 className="section-heading">
+      <h2 className="section-heading2">
        About & Services
       </h2>
 
-      <div className="services-container">
+      <div className="services-container2">
 
         {/* LEFT SIDE */}
 
-        <div className="services-left">
+        <div className="services-left2">
 
           <h3>
             18+ Years of Excellence in Ad Film Making & TV Broadcasting
@@ -422,7 +422,7 @@ const slides1 = [
           Pooja Movie Creations is a pioneer in the world of Ad Film Making and TV Broadcasting.
 For over 18 years, we have been creating impactful advertising solutions that connect brands with millions of...
           </p>
-        <Link to="/about" className="read-more-btn">
+        <Link to="/about" className="read-more-btn2">
   Read More →
 </Link>
 
@@ -431,13 +431,13 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
         {/* RIGHT SIDE */}
 
-        <div className="services-right" style={{backgroundColor:"#111"}}>
+        <div className="services-right2" style={{backgroundColor:"#111"}}>
 
           {services.map((service, index) => (
 
-            <a href={service.link} className="service-card" key={index} style={{backgroundColor:"#111"}}>
+            <a href={service.link} className="service-card2" key={index} style={{backgroundColor:"#111"}}>
 
-              <div className="icon">
+              <div className="icon2">
                 {service.icon}
               </div>
 

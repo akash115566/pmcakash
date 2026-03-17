@@ -14,6 +14,7 @@ import Client from "./Pages/Client";
 import Contact from "./Pages/Contact";
 import TvAdd from "./Pages/TvAdd";
 import Tvc from "./Pages/Tvc";
+import Tvadfilm from "./Pages/Tvadfilm";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
                        <Route path="/contact" element={<Contact />} />
                           <Route path="/tvadd" element={<TvAdd />} />
                           <Route path="/tvc" element={<Tvc />} />
+                             <Route path="/tvadfilm" element={<Tvadfilm />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
