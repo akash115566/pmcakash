@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaBriefcase, FaBox, FaAward, FaStar, FaHandshake, FaVideo } from "react-icons/fa";
 import {
   FaTv,
   FaFilm,
-  FaVideo,
+
   FaBuilding,
   FaPlane,
   FaSubway,
@@ -117,17 +118,51 @@ const services = [
   //   return () => clearInterval(interval);
   // }, []);
 
+ const data2 = [
+    {
+      icon: <FaBriefcase />,
+      title: "18+ Years Experience",
+      text: "Proven expertise in film production.",
+    },
+    {
+      icon: <FaBox />,
+      title: "Custom Promotion Packages",
+      text: "Tailored branding strategies.",
+    },
+    {
+      icon: <FaAward />,
+      title: "National Awards",
+      text: "Recognized for excellence.",
+    },
+    {
+      icon: <FaStar />,
+      title: "900+ Celebrity Endorsements",
+      text: "Trusted by leading celebrities.",
+    },
+    {
+      icon: <FaHandshake />,
+      title: "5000+ Client Brands",
+      text: "Strong client partnerships.",
+    },
+    {
+      icon: <FaVideo />,
+      title: "5000+ Video Projects",
+      text: "Vast experience across industries.",
+    },
+  ];
+
+
   
 
 const slides1 = [
-  { img: "/hsl1.webp", heading: "Best Production House" },
-  { img: "/hsl2.webp", heading: "Best Media House" },
-  { img: "/hsl3.webp", heading: "Best Broadcast Company" },
-  { img: "/hsl4.webp", heading: "Best Tv ad film Making company" },
-  { img: "/hsl5.webp", heading: "BEST PR ADVERTISING COMPANY" },
-  { img: "/hsl6.webp", heading: "Corporate Advertising" },
-  { img: "/hsl7.webp", heading: "Media & Broadcasting" },
-  { img: "/hsl8.webp", heading: "Ad Film Production" }
+  { img: "/hsl1.webp", heading: "POOJA MOVIE  CREATIONS ",desc: "BEST PRODUCTION COMPANY CELEBRATING 17 YEARS OF EXCELLENCE" },
+  { img: "/hsl2.webp", heading: "POOJA MOVIE  CREATIONS",desc: "BEST TELESSHOPPING MAKERS CELEBRATING 17BYEARS OF EXCELLENCE" },
+  { img: "/hsl3.webp", heading: "Elevate Your Brand Visually",desc: "India's leading ad film makers and brand promotion agency" },
+  { img: "/hsl4.webp", heading: "Your Vision, Our Cinematic Excellence",desc: "Highlights collaboration and quality" },
+  { img: "/hsl5.webp", heading: "Professional Product Shoot Services" ,desc: "Clear message that Pooja Movie Creations provides professional product shoot services"},
+  { img: "/hsl6.webp", heading: "TV Advertising Just ₹99,000 for 30 Days!",desc: "Boost your brand with our premium TV ads! Reach millions for just ₹99,000/month. Don’t miss out!" },
+  { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency" },
+  { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE" }
 ];
 
   const [current, setCurrent] = useState(0);
@@ -327,7 +362,13 @@ const slides1 = [
 
         <div className="slide-content">
           <h2>{slide.heading}</h2>
+           <h3>{slide.desc}</h3>
+             <div className="slider-buttons">
+    <button className="btn btn-primary">▶ Watch Showreel</button>
+    <button className="btn btn-outline">Contact Us</button>
+  </div>
         </div>
+        
 
       </div>
     ))}
@@ -413,6 +454,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
     </section>
 
 
+    
+
+
 
       <section className="services-section1" style={{backgroundColor:"#111"}}>
         <h2 className="services-heading1">Our Services</h2>
@@ -450,6 +494,21 @@ For over 18 years, we have been creating impactful advertising solutions that co
           </Link>
         </div>
       </section>
+
+
+       <section className="why-section2">
+      <h2 className="why-heading2">Why Choose Us</h2>
+
+      <div className="why-container2">
+        {data2.map((item, index) => (
+          <div className="why-card2" key={index}>
+            <div className="why-icon2">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
 
 
       <section className="ipl-section">
@@ -530,13 +589,13 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
 
-      <div className="slider-wrapper6">
-        <h2 className="slider-heading6" style={{ textAlign: "center" }}>News Channels</h2>
+      <div className="slider-wrapper7">
+        <h2 className="slider-heading7" >News Channels</h2>
         <p style={{ textAlign: "center", color: "#fff" }}>Bharat ke top news channels par apna brand showcase karein.</p>
-        <div className="slider6">
-          <div className="slide-track6">
+        <div className="slider7">
+          <div className="slide-track7">
             {images6.concat(images6).map((img, index) => (
-              <div className="slide6" key={index}>
+              <div className="slide7" key={index}>
                 <img src={img} alt="slider" />
               </div>
             ))}
@@ -601,6 +660,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <section className="exclusive-media-section2">
+      <h2 className="exclusive-heading2">
+          OUR AWARDS
+        </h2>
         <div className="exclusive-container2">
           {cards2.map((card, index) => (
             <div className="exclusive-card2" key={index}>
@@ -612,7 +674,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
         <div className="services-button2">
           <Link to="/award" className="main-link2">
-            View More →
+            View All Awards →
           </Link>
         </div>
       </section>
