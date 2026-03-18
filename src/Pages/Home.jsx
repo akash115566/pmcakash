@@ -98,7 +98,7 @@ const services = [
   { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
   { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
   { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvadfilm" },
-  { icon: <FaVideo />, title: "Web Series Production", link: "/web-series" },
+  { icon: <FaVideo />, title: "Web Series Production", link: "/web" },
   { icon: <FaBuilding />, title: "Corporate Film Production", link: "/corporate-film" },
   { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
   { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
@@ -422,9 +422,11 @@ const slides1 = [
           Pooja Movie Creations is a pioneer in the world of Ad Film Making and TV Broadcasting.
 For over 18 years, we have been creating impactful advertising solutions that connect brands with millions of...
           </p>
-        <Link to="/about" className="read-more-btn2">
-  Read More →
-</Link>
+        <div className="btn-group">
+  <Link to="/about" className="read-more-btn2">
+    Read More →
+  </Link>
+</div>
 
         </div>
 
@@ -465,25 +467,25 @@ For over 18 years, we have been creating impactful advertising solutions that co
           <div className="service-card1">
             <img src="/hs1.webp" alt="Service 1" />
             <h3>TV Advertising</h3>
-            <p>Expand your brand’s reach with Pooja Movie Creations’ TV Advertising. With nationwide visibility and unmatched influence, television remains...</p>
+            <p>Expand your brand’s reach with Pooja Movie Creations’ TV Advertising. With nationwide visibility and unmatched...</p>
           </div>
 
           <div className="service-card1">
             <img src="/hs2.webp" alt="Service 2" />
             <h3>TVC Making</h3>
-            <p>Bring your brand vision to life with Pooja Movie Creations’ TVC Making. From concept ideation to full-scale production, we create powe...</p>
+            <p>Bring your brand vision to life with Pooja Movie Creations’ TVC Making. From concept ideation to full-scale ...</p>
           </div>
 
           <div className="service-card1">
             <img src="/hs3.webp" alt="Service 3" />
             <h3>TV Ad Film Production</h3>
-            <p>Make your brand unforgettable with Pooja Movie Creations’ TV Ad Film Production. From creative concepts to cinematic...</p>
+            <p>Make your brand unforgettable with Pooja Movie Creations’ TV Ad Film Production. From creative...</p>
           </div>
 
           <div className="service-card1">
             <img src="/hs4.webp" alt="Service 4" />
             <h3>Web Series Production</h3>
-            <p>Bring stories to life with Pooja Movie Creations’ Web Series Production. From concept development to high-quality execution, we create engagin...</p>
+            <p>Bring stories to life with Pooja Movie Creations’ Web Series Production. From concept development to high-quality...</p>
           </div>
         </div>
 
@@ -556,7 +558,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
       </section>
 
       <div className="slider-wrapper4">
-        <h2 className="slider-headin4" style={{ textAlign: "center", fontSize: "3rem", color: "#f4b400" }}>Exclusive Advertising</h2>
+        <h2 className="slider-heading4" >Exclusive Advertising</h2>
         <div className="slider4">
           <div className="slide-track4">
             {images4.concat(images4).map((img, index) => (
@@ -572,7 +574,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <div className="slider-wrapper5" style={{ background: "#111" }}>
-        <h2 className="slider-headin5" style={{ textAlign: "center", fontSize: "3rem", color: "#f4b400" }}>Premium Channels</h2>
+        <h2 className="slider-heading5">Premium Channels</h2>
         <p style={{ textAlign: "center", color: "#fff" }}>Apne brand ko top TV & OTT channels par showcase karein. Smooth slider me premium partner channels dekhein.</p>
         <div className="slider5">
           <div className="slide-track5">
@@ -827,6 +829,52 @@ For over 18 years, we have been creating impactful advertising solutions that co
           </div>
         </div>
       </section>
+
+
+      <section className="contact-section">
+
+  <h2 className="contact-heading">Contact Us</h2>
+
+  <div className="contact-container">
+
+    {/* LEFT SIDE */}
+    <div className="contact-left">
+      <h3>📍 Get in Touch</h3>
+
+      <p>
+        <strong>Address:</strong> 167, Block A, Sector 63A,<br />
+        Sector 62, Noida, Uttar Pradesh 201301
+      </p>
+
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@poojamoviecreations.com</p>
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="contact-right">
+      <h3>✉️ Send Us a Message</h3>
+
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  {/* MAP */}
+  <div className="contact-map">
+    <iframe
+      src="https://maps.google.com/maps?q=noida%20sector%2062&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+
+</section>
 
 
 
