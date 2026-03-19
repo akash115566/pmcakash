@@ -16,6 +16,8 @@ import TvAdd from "./Pages/TvAdd";
 import Tvc from "./Pages/Tvc";
 import Tvadfilm from "./Pages/Tvadfilm";
 import Web from "./Pages/Web";
+import Corporate from "./Pages/Corporate";
+import Radio from "./Pages/Radio";
 
 
 const App = () => {
@@ -37,6 +39,9 @@ const App = () => {
                           <Route path="/tvc" element={<Tvc />} />
                              <Route path="/tvadfilm" element={<Tvadfilm />} />
                               <Route path="/web" element={<Web />} />
+                               <Route path="/corporate-film" element={<Corporate />} />
+                                 <Route path="/radio-fm" element={<Radio />} />
+                               
         </Routes>
         {/* <Footer /> */}
       </Router>
