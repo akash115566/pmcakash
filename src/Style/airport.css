@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HERO */
+.pvc-hero {
+  background: url("/ar.webp") no-repeat center/cover;
+  height: 60vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* GRID LAYOUT */
+.pvc-cards-section {
+    padding-top: 20px;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+/* HEADING */
+.pvc-heading {
+  font-size: 2.5rem;
+  color: #f5c33c;
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+}
+.pvc-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0px 2%;
+  background: #0a0a0a;
+}
+
+
+/* CARD */
+.pvc-card {
+  background: #111;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s ease;
+  box-shadow: 0 0 20px rgba(253, 210, 139, 0.25);
+}
+
+/* GOLDEN BORDER EFFECT */
+.pvc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(45deg, #fdd28b, transparent, #fdd28b);
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* HOVER */
+.pvc-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(253, 210, 139, 0.6);
+}
+
+/* IMAGE */
+.pvc-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.pvc-card h3 {
+  color: #f5c33c;
+  font-size: 22px;
+  margin: 15px 15px 5px;
+}
+
+.pvc-card h4 {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 15px 10px;
+}
+
+.pvc-card p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 0 15px 20px;
+}
+/* ABOUT SECTION */
+.pvc-about {
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f5c33c;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.about-text button {
+  padding: 10px 20px;
+  background: #f5c33c;
+  border: none;
+  cursor: pointer;
+}
+
+/* FEATURES */
+.pvc-features {
+  padding: 60px 6%;
+  background: #111;
+}
+
+/* Heading */
+.features-heading {
+    font-size: 2.5rem;
+    color: #f5c33c;
+  grid-column: 1 / -1; /* full row le lega */
+  text-align: center;
+}
+
+/* Cards container */
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.feature-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.feature-card h3{
+    color: #f5c33c;
+}
+/* GOLDEN BORDER EFFECT */
+
+
+/* HOVER */
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(253, 210, 139, 0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .pvc-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pvc-about {
+    flex-direction: column;
+  }
+
+  .pvc-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pvc-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pvc-features {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay h1 {
+    font-size: 26px;
+  }
+}

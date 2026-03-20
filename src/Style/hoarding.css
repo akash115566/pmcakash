@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HERO SECTION */
+.pvc-hero2 {
+  width: 100%;
+  height: 60vh;
+  background: url('/ha.webp') center/cover no-repeat;
+  position: relative;
+}
+
+/* Overlay */
+.overlay2 {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay2 h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* ========================= */
+/* CARDS SECTION */
+/* ========================= */
+
+.pvc-cards-section2 {
+  padding: 60px 6%;
+  background: #111;
+}
+
+/* Heading */
+.pvc-heading2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fdd28b;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Cards Grid */
+.pvc-cards2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.pvc-card2 {
+  background: #1a1a1a;
+  border-radius: 15px;
+
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #222;
+}
+
+/* Image */
+.pvc-card2 img {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Text */
+.pvc-card2 h3 {
+  color: #f5c33c;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  padding: 20px;
+}
+
+.pvc-card2 h4 {
+  color: #fdd28b;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.pvc-card2 p {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 10px 40px;
+}
+
+/* Hover */
+.pvc-card2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(253, 210, 139, 0.2);
+  border-color: #fdd28b;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .overlay2 h1 {
+    font-size: 2.3rem;
+  }
+
+  .pvc-cards2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .pvc-hero2 {
+    height: 45vh;
+  }
+
+  .overlay2 h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .pvc-heading2 {
+    font-size: 2rem;
+  }
+
+  .pvc-cards2 {
+    grid-template-columns: 1fr;
+  }
+
+  .pvc-card2 {
+    padding: 15px;
+  }
+
+  .pvc-card2 img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* ========================= */
+/* SMALL DEVICES (≤480px) */
+/* ========================= */
+@media (max-width: 480px) {
+
+  .pvc-hero2 {
+    height: 40vh;
+  }
+
+  .overlay2 h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  .pvc-heading2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .pvc-cards-section2 {
+    padding: 40px 15px;
+  }
+
+  .pvc-cards2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pvc-card2 {
+    padding: 15px;
+  }
+
+  .pvc-card2 img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .pvc-card2 h3 {
+    font-size: 1.1rem;
+  }
+
+  .pvc-card2 h4 {
+    font-size: 0.9rem;
+  }
+
+  .pvc-card2 p {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* ========================= */
+/* EXTRA SMALL DEVICES (≤360px) */
+/* ========================= */
+@media (max-width: 360px) {
+
+  .pvc-hero2 {
+    height: 35vh;
+  }
+
+  .overlay2 h1 {
+    font-size: 1.4rem;
+  }
+
+  .pvc-heading2 {
+    font-size: 1.6rem;
+  }
+
+  .pvc-card2 {
+    padding: 12px;
+  }
+
+  .pvc-card2 img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .pvc-card2 h3 {
+    font-size: 1rem;
+  }
+
+  .pvc-card2 h4 {
+    font-size: 0.85rem;
+  }
+
+  .pvc-card2 p {
+    font-size: 0.8rem;
+  }
+}
