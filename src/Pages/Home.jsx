@@ -437,7 +437,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
           {services.map((service, index) => (
 
-            <a href={service.link} className="service-card2" key={index} style={{backgroundColor:"#111"}}>
+            <Link to={service.link} className="service-card2" key={index} style={{backgroundColor:"#111"}}>
 
               <div className="icon2">
                 {service.icon}
@@ -445,7 +445,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
               <h4>{service.title}</h4>
 
-            </a>
+            </Link>
 
           ))}
 
