@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route,Link,HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { ThemeProvider } from "./ThemeContext";
 import ScrollToTop from "../src/Pages/ScrollToTop";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -39,9 +39,9 @@ const App = () => {
           <Route path="/client" element={<Client />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tvadd" element={<TvAdd />} />
-          <Route path="/tvc" element={<Tvc />} />
-          <Route path="/tvadfilm" element={<Tvadfilm />} />
-          <Route path="/web" element={<Web />} />
+          <Route path="/tvc-advertising" element={<Tvc />} />
+          <Route path="/tvadfilm-advertising" element={<Tvadfilm />} />
+          <Route path="/web-advertising" element={<Web />} />
           <Route path="/corporate-film" element={<Corporate />} />
           <Route path="/radio-fm" element={<Radio />} />
           <Route path="/pvr-advertising" element={<PVCPage />} />
