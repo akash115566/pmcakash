@@ -94,20 +94,7 @@ const images6 = [
 const Home = () => {
 
     const navigate = useNavigate();
-const services = [
-  { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
-  { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
-  { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvadfilm" },
-  { icon: <FaVideo />, title: "Web Series Production", link: "/web" },
-  { icon: <FaBuilding />, title: "Corporate Film Production", link:  "/corporate-film"},
-  { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
-  { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
-  { icon: <FaPlane />, title: "Airport Advertising", link: "/airport-advertising" },
-  { icon: <FaBullhorn />, title: "Hoardings Advertising", link: "/hoardings" },
-  { icon: <FaSubway />, title: "Metro Advertising", link: "/metro-advertising" },
-  { icon: <FaPrint />, title: "Print Advertising", link: "/print-advertising" },
-  { icon: <FaAd />, title: "Digital Live Screen Advertising", link: "/digital-screen" }
-];
+    
   // const [current, setCurrent] = useState(0);
 
   // useEffect(() => {

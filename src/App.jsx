@@ -38,7 +38,7 @@ const App = () => {
                   <Route path="/gallery" element={<Gallery />} />
                      <Route path="/client" element={<Client />} />
                        <Route path="/contact" element={<Contact />} />
-                          <Route path="/tvadd" element={<TvAdd />} />
+                          <Route path="/TvAdd" element={<TvAdd />} />
                           <Route path="/tvc" element={<Tvc />} />
                              <Route path="/tvadfilm" element={<Tvadfilm />} />
                               <Route path="/web" element={<Web />} />
