@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/corporate.css";
+import "../Style/Corporate.css";
 import {
   FaStar,
   FaVideo,
