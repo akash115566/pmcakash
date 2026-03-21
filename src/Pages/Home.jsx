@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBriefcase, FaBox, FaAward, FaStar, FaHandshake, FaVideo } from "react-icons/fa";
+
 import {
   FaTv,
   FaFilm,
-
+  FaBroadcastTower ,
   FaBuilding,
   FaPlane,
   FaSubway,
@@ -94,7 +95,21 @@ const images6 = [
 const Home = () => {
 
     const navigate = useNavigate();
-    
+const services = [
+  { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
+  { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
+  { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvfilm" },
+  { icon: <FaVideo />, title: "Web Series Production", link: "/webseries" },
+  { icon: <FaVideo />, title: "Corporate Film Production", link: "/corporate" },
+  { icon: <FaBroadcastTower />, title: "Radio FM Advertising", link: "/radio" },
+  { icon: <FaTv />, title: "PVR Cinemas Advertising", link: "/pvr" },
+  { icon: <FaTv />, title: "Airport Advertising", link: "/airport" },
+  { icon: <FaTv />, title: "Hoardings Advertising", link: "/hoarding" },
+  { icon: <FaTv />, title: "Metro Advertising", link: "/metro" },
+  { icon: <FaTv />, title: "Print Advertising", link: "/print" },
+  { icon: <FaTv />, title: "Digital Live Screen Advertising", link: "/digital" },
+];
+  const [showMore, setShowMore] = useState(false);
   // const [current, setCurrent] = useState(0);
 
   // useEffect(() => {
@@ -387,59 +402,49 @@ const slides1 = [
     </section>
 
 
-    <section className="services-section2" style={{backgroundColor:"#111"}}>
+      <section className="about-services">
+      
+      {/* Top Heading */}
+      <h2 className="main-heading">About & Services</h2>
 
-      <h2 className="section-heading2">
-       About & Services
-      </h2>
-
-      <div className="services-container2">
+      <div className="container">
 
         {/* LEFT SIDE */}
+        <div className="left">
+          <h3>18+ Years of Excellence in Ad Film Making & TV Broadcasting</h3>
 
-        <div className="services-left2">
-
-          <h3>
-            18+ Years of Excellence in Ad Film Making & TV Broadcasting
-          </h3>
-
-          <img src="/h1.webp" alt="advertising" />
+          <img src="/images/about.jpg" alt="about" />
 
           <p>
-          Pooja Movie Creations is a pioneer in the world of Ad Film Making and TV Broadcasting.
-For over 18 years, we have been creating impactful advertising solutions that connect brands with millions of...
+            We are a leading advertising agency specializing in TV ads,
+            corporate films, and digital promotions.
+            {showMore && (
+              <>
+                {" "}
+                Our team delivers high-quality production services with
+                creative storytelling and strong brand impact. We help brands
+                grow through innovative advertising solutions across multiple
+                platforms.
+              </>
+            )}
           </p>
-        <div className="btn-group">
-  <Link to="/about" className="read-more-btn2">
-    Read More →
-  </Link>
-</div>
 
+          <button onClick={() => setShowMore(!showMore)}>
+            {showMore ? "Show Less" : "Read More"}
+          </button>
         </div>
 
-
         {/* RIGHT SIDE */}
-
-        <div className="services-right2" style={{backgroundColor:"#111"}}>
-
-          {services.map((service, index) => (
-
-            <Link to={service.link} className="service-card2" key={index} style={{backgroundColor:"#111"}}>
-
-              <div className="icon2">
-                {service.icon}
-              </div>
-
-              <h4>{service.title}</h4>
-
+        <div className="right">
+          {services.map((item, index) => (
+            <Link to={item.link} className="card" key={index}>
+              <div className="icon">{item.icon}</div>
+              <h4>{item.title}</h4>
             </Link>
-
           ))}
-
         </div>
 
       </div>
-
     </section>
 
 
