@@ -162,7 +162,10 @@ const slides1 = [
   { img: "/hsl5.webp", heading: "Professional Product Shoot Services" ,desc: "Clear message that Pooja Movie Creations provides professional product shoot services"},
   { img: "/hsl6.webp", heading: "TV Advertising Just ₹99,000 for 30 Days!",desc: "Boost your brand with our premium TV ads! Reach millions for just ₹99,000/month. Don’t miss out!" },
   { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency" },
-  { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE" }
+  { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE" },
+    { img: "/ht1.jfif", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands reach millions of viewers  campaigns and creative marketing strategies." },
+      { img: "/ht2.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV commercials, corporate films and and creative storytelling." },
+        { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media solutions including advertising planning, broadcasting and to help businesses grow faster." }
 ];
 
   const [current, setCurrent] = useState(0);
@@ -375,7 +378,7 @@ const slides1 = [
   </div>
 </section>
 
-      <section className="agency-section">
+      {/* <section className="agency-section">
 
       {data.map((item, index) => (
         <div className="agency-box" key={index}>
@@ -397,7 +400,7 @@ const slides1 = [
         </div>
       ))}
 
-    </section>
+    </section> */}
 
 
     <section className="services-section2" style={{backgroundColor:"#111"}}>
