@@ -38,7 +38,7 @@ const App = () => {
                   <Route path="/gallery" element={<Gallery />} />
                      <Route path="/client" element={<Client />} />
                        <Route path="/contact" element={<Contact />} />
-                          <Route path="/TvAdd" element={<TvAdd />} />
+                          <Route path="/tvadd" element={<TvAdd />} />
                           <Route path="/tvc" element={<Tvc />} />
                              <Route path="/tvadfilm" element={<Tvadfilm />} />
                               <Route path="/web" element={<Web />} />
@@ -46,7 +46,7 @@ const App = () => {
                                  <Route path="/radio-fm" element={<Radio />} />
                                   <Route path="/pvr-advertising" element={<PVCPage />} />
                                    <Route path="/airport-advertising" element={<Airport />} />
-                                     <Route path="/airport-advertising" element={<Hoarding />} />
+                                   <Route path="/hoarding" element={<Hoarding />} />
                                
         </Routes>
         {/* <Footer /> */}
