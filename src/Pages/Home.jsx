@@ -99,7 +99,7 @@ const services = [
   { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
   { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvadfilm" },
   { icon: <FaVideo />, title: "Web Series Production", link: "/web" },
-  { icon: <FaBuilding />, title: "Corporate Film Production", link: "/corporate" },
+  { icon: <FaBuilding />, title: "Corporate Film Production", link: "/corporate-film" },
   { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
   { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
   { icon: <FaPlane />, title: "Airport Advertising", link: "/airport-advertising" },
