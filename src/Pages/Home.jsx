@@ -94,20 +94,20 @@ const images6 = [
 const Home = () => {
 
     const navigate = useNavigate();
-// const services = [
-//   { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
-//   { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
-//   { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvadfilm" },
-//   { icon: <FaVideo />, title: "Web Series Production", link: "/web" },
-//   { icon: <FaBuilding />, title: "Corporate Film Production", link:  "/corporate-film"},
-//   { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
-//   { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
-//   { icon: <FaPlane />, title: "Airport Advertising", link: "/airport-advertising" },
-//   { icon: <FaBullhorn />, title: "Hoardings Advertising", link: "/hoardings" },
-//   { icon: <FaSubway />, title: "Metro Advertising", link: "/metro-advertising" },
-//   { icon: <FaPrint />, title: "Print Advertising", link: "/print-advertising" },
-//   { icon: <FaAd />, title: "Digital Live Screen Advertising", link: "/digital-screen" }
-// ];
+const services = [
+  { icon: <FaTv />, title: "TV Advertising", link: "/tvadd" },
+  { icon: <FaFilm />, title: "TVC Making", link: "/tvc" },
+  { icon: <FaVideo />, title: "TV Ad Film Production", link: "/tvadfilm" },
+  { icon: <FaVideo />, title: "Web Series Production", link: "/web" },
+  { icon: <FaBuilding />, title: "Corporate Film Production", link:  "/corporate-film"},
+  { icon: <FaBullhorn />, title: "Radio FM Advertising", link: "/radio-fm" },
+  { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
+  { icon: <FaPlane />, title: "Airport Advertising", link: "/airport-advertising" },
+  { icon: <FaBullhorn />, title: "Hoardings Advertising", link: "/hoardings" },
+  { icon: <FaSubway />, title: "Metro Advertising", link: "/metro-advertising" },
+  { icon: <FaPrint />, title: "Print Advertising", link: "/print-advertising" },
+  { icon: <FaAd />, title: "Digital Live Screen Advertising", link: "/digital-screen" }
+];
   // const [current, setCurrent] = useState(0);
 
   // useEffect(() => {
@@ -433,69 +433,23 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
         {/* RIGHT SIDE */}
 
-    <div className="services-right2" style={{ backgroundColor: "#111" }}>
+        <div className="services-right2" style={{backgroundColor:"#111"}}>
 
-  <Link to="/tvadd" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaTv /></div>
-    <h4>TV Advertising</h4>
-  </Link>
+          {services.map((service, index) => (
 
-  <Link to="/tvc" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaFilm /></div>
-    <h4>TVC Making</h4>
-  </Link>
+            <Link to={service.link} className="service-card2" key={index} style={{backgroundColor:"#111"}}>
 
-  <Link to="/tvadfilm" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaVideo /></div>
-    <h4>TV Ad Film Production</h4>
-  </Link>
+              <div className="icon2">
+                {service.icon}
+              </div>
 
-  <Link to="/web" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaVideo /></div>
-    <h4>Web Series Production</h4>
-  </Link>
+              <h4>{service.title}</h4>
 
-  <Link to="/corporate-film" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaBuilding /></div>
-    <h4>Corporate Film Production</h4>
-  </Link>
+            </Link>
 
-  <Link to="/radio-fm" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaBullhorn /></div>
-    <h4>Radio FM Advertising</h4>
-  </Link>
+          ))}
 
-  <Link to="/pvr-advertising" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaFilm /></div>
-    <h4>PVR Cinemas Advertising</h4>
-  </Link>
-
-  <Link to="/airport-advertising" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaPlane /></div>
-    <h4>Airport Advertising</h4>
-  </Link>
-
-  <Link to="/hoardings" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaBullhorn /></div>
-    <h4>Hoardings Advertising</h4>
-  </Link>
-
-  <Link to="/metro-advertising" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaSubway /></div>
-    <h4>Metro Advertising</h4>
-  </Link>
-
-  <Link to="/print-advertising" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaPrint /></div>
-    <h4>Print Advertising</h4>
-  </Link>
-
-  <Link to="/digital-screen" className="service-card2" style={{ backgroundColor: "#111" }}>
-    <div className="icon2"><FaAd /></div>
-    <h4>Digital Live Screen Advertising</h4>
-  </Link>
-
-</div>
+        </div>
 
       </div>
 
