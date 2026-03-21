@@ -21,37 +21,43 @@ import Radio from "./Pages/Radio";
 import PVCPage from "./Pages/PVCPage";
 import Airport from "./Pages/Airport";
 import Hoarding from "./Pages/Hoarding";
+import Metro from "./Pages/Metro";
+import Print from "./Pages/Print";
+import Digital from "./Pages/Digital";
 
 
 const App = () => {
   return (
-   <React.StrictMode>
+    <React.StrictMode>
       <Router>
         <Navbar />
-          <ScrollToTop />
+        <ScrollToTop />
         <Routes>
-           <Route path="/" element={<Home />} />
-             <Route path="/about" element={<About />} />
-               <Route path="/service" element={<Service />} />
-                <Route path="/work" element={<Work />} />
-                  <Route path="/award" element={<Award />} />
-                  <Route path="/gallery" element={<Gallery />} />
-                     <Route path="/client" element={<Client />} />
-                       <Route path="/contact" element={<Contact />} />
-                          <Route path="/tvadd" element={<TvAdd />} />
-                          <Route path="/tvc" element={<Tvc />} />
-                             <Route path="/tvadfilm" element={<Tvadfilm />} />
-                              <Route path="/web" element={<Web />} />
-                               <Route path="/corporate-film" element={<Corporate />} />
-                                 <Route path="/radio-fm" element={<Radio />} />
-                                  <Route path="/pvr-advertising" element={<PVCPage />} />
-                                   <Route path="/airport-advertising" element={<Airport />} />
-                                   <Route path="/hoarding" element={<Hoarding />} />
-                               
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/award" element={<Award />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/client" element={<Client />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/tvadd" element={<TvAdd />} />
+          <Route path="/tvc" element={<Tvc />} />
+          <Route path="/tvadfilm" element={<Tvadfilm />} />
+          <Route path="/web" element={<Web />} />
+          <Route path="/corporate-film" element={<Corporate />} />
+          <Route path="/radio-fm" element={<Radio />} />
+          <Route path="/pvr-advertising" element={<PVCPage />} />
+          <Route path="/airport-advertising" element={<Airport />} />
+          <Route path="/hoarding" element={<Hoarding />} />
+          <Route path="/metro" element={<Metro />} />
+               <Route path="/print" element={<Print />} />
+                  <Route path="/digital-screen" element={<Digital />} />
+
         </Routes>
         {/* <Footer /> */}
       </Router>
- </React.StrictMode>
+    </React.StrictMode>
   );
 };
 

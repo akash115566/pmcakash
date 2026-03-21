@@ -6,37 +6,37 @@ import "../Style/hoarding.css"
 
 const cards2 = [
   {
-    img: "/ar1.webp",
+    img: "/ha1.webp",
     title: "Strategic Locations",
     // subtitle: "Big Screen Ads",
     desc: "High-traffic placement ensures maximum visibility for your brand."
   },
   {
-    img: "/ar2.avif",
+    img: "/ha2.webp",
     title: "Creative Designs",
     // subtitle: "Small Screen Ads",
     desc: "Catchy hoarding designs that instantly attract public attention"
   },
   {
-    img: "/ar3.webp",
+    img: "/ha3.webp",
     title: "Brand Awareness",
     // subtitle: "Standee Ads",
     desc: "Boost recognition with powerful outdoor advertising strategies."
   },
   {
-    img: "/ar4.webp",
+    img: "/ha4.webp",
     title: "Event Promotionst",
     // subtitle: "Popcorn Bucket Ads",
     desc: "Drive audience engagement by promoting events on big hoardings."
   },
   {
-    img: "/ar5.webp",
+    img: "/ha5.webp",
     title: "Targeted Audience",
     // subtitle: "Lobby & Restroom Ads",
     desc: "Reach the right audience with location-specific hoarding campaigns."
   },
   {
-    img: "/ar6.webp",
+    img: "/ha6.webp",
     title: "End-to-End Execution",
     // subtitle: "Seat Back Ads",
     desc: "From design to installation, we handle the entire process smoothly."
@@ -50,7 +50,7 @@ const Hoarding = () => {
      {/* HERO SECTION */}
       <section className="pvc-hero2">
         <div className="overlay2">
-          <h1>About Hoardings Advertising</h1>
+          {/* <h1>About Hoardings Advertising</h1> */}
         </div>
       </section>
 

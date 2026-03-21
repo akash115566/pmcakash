@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Page */
+.digi-page {
+  background: #111;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* 🔥 Banner */
+.digi-banner {
+  height: 60vh;
+  background: url(" /d.webp") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  color: #f5c33c ;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* 🔥 About */
+.digi-about {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.digi-about h2 {
+  font-size: 2rem;
+  color: #f5c33c ;
+  margin-bottom: 20px;
+}
+
+.digi-about p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* 🔥 Cards */
+.digi-cards {
+  padding: 50px 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 column */
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: #f5c33c ;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #333;
+}
+
+/* 🔥 Responsive */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .digi-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .digi-banner {
+    height: 40vh;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .digi-cards {
+    grid-template-columns: 1fr;
+  }
+}

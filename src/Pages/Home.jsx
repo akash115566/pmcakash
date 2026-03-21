@@ -104,8 +104,8 @@ const services = [
   { icon: <FaFilm />, title: "PVR Cinemas Advertising", link: "/pvr-advertising" },
   { icon: <FaPlane />, title: "Airport Advertising", link: "/airport-advertising" },
   { icon: <FaBullhorn />, title: "Hoarding", link: "/hoarding" },
-  { icon: <FaSubway />, title: "Metro Advertising", link: "/metro-advertising" },
-  { icon: <FaPrint />, title: "Print Advertising", link: "/print-advertising" },
+  { icon: <FaSubway />, title: "Metro Advertising", link: "/metro" },
+  { icon: <FaPrint />, title: "Print Advertising", link: "/print" },
   { icon: <FaAd />, title: "Digital Live Screen Advertising", link: "/digital-screen" }
 ];
   // const [current, setCurrent] = useState(0);
