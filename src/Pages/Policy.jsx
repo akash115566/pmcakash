@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/Policy.css";
+import "../Style/policy.css";
 
 const Policy = () => {
   return (
