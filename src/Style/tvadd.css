@@ -992,7 +992,7 @@ font-size:12px;
 }
 
 
-.why-section{
+.why-section1{
   width:100%;
   padding:60px 8%;
   background:#0b0b0b;
@@ -1000,7 +1000,7 @@ font-size:12px;
 
 /* container */
 
-.why-container{
+.why-container1{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -1010,17 +1010,17 @@ font-size:12px;
 
 /* reverse layout */
 
-.reverse{
+.reverse1{
   flex-direction:row-reverse;
 }
 
 /* image */
 
-.why-img{
+.why-img1{
   flex:1;
 }
 
-.why-img img{
+.why-img1 img{
   width:100%;
   border-radius:10px;
   display:block;
@@ -1028,17 +1028,17 @@ font-size:12px;
 
 /* text */
 
-.why-text{
+.why-text1{
   flex:1;
 }
 
-.why-text h2{
+.why-text1 h2{
   font-size:32px;
   color:#f5b300;
   margin-bottom:20px;
 }
 
-.why-text p{
+.why-text1 p{
   font-size:16px;
   color:#ddd;
   line-height:1.7;
@@ -1051,16 +1051,16 @@ font-size:12px;
 
 @media (max-width:900px){
 
-  .why-container{
+  .why-container1{
     flex-direction:column;
     text-align:center;
   }
 
-  .reverse{
+  .reverse1{
     flex-direction:column;
   }
 
-  .why-text h2{
+  .why-text1 h2{
     font-size:26px;
   }
 
@@ -1068,11 +1068,11 @@ font-size:12px;
 
 @media (max-width:480px){
 
-  .why-section{
+  .why-section1{
     padding:40px 5%;
   }
 
-  .why-text p{
+  .why-text1 p{
     font-size:14px;
   }
 
@@ -1116,7 +1116,7 @@ font-size:12px;
 .campaign-btn{
   display:inline-block;
   padding:14px 35px;
-  background:#f5b300;
+  background:#f5c33c;
   color:#000;
   font-size:16px;
   font-weight:600;
@@ -1126,7 +1126,7 @@ font-size:12px;
 }
 
 .campaign-btn:hover{
-  background:#ffa500;
+  background:#f5c33c;
   transform:scale(1.05);
 }
 

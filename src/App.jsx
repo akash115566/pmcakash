@@ -24,6 +24,13 @@ import Hoarding from "./Pages/Hoarding";
 import Metro from "./Pages/Metro";
 import Print from "./Pages/Print";
 import Digital from "./Pages/Digital";
+import Footer from "./Pages/Footer";
+import Terms from "./Pages/Terms";
+import Privacy from "./Pages/Privacy";
+import Disclaimer from "./Pages/Disclaimer";
+import Policy from "./Pages/Policy";
+import Legal from "./Pages/Legal";
+import Founder from "./Pages/Founder";
 
 
 const App = () => {
@@ -51,11 +58,18 @@ const App = () => {
           <Route path="/airport-advertising" element={<Airport />} />
           <Route path="/hoarding" element={<Hoarding />} />
           <Route path="/metro" element={<Metro />} />
-               <Route path="/print" element={<Print />} />
-                  <Route path="/digital-screen" element={<Digital />} />
+          <Route path="/print" element={<Print />} />
+          <Route path="/digital-screen" element={<Digital />} />
+          <Route path="/footer" element={<Footer />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+           <Route path="/disclaimer" element={<Disclaimer />} />
+                  <Route path="/policy" element={<Policy />} />
+                   <Route path="/legal" element={<Legal />} />
+                      <Route path="/founder" element={<Founder />} />
 
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </React.StrictMode>
   );

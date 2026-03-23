@@ -232,16 +232,16 @@ const TvAdd = () => {
 
 
 
-          <section className="why-section">
+          <section className="why-section1">
 
       {/* Section 1 */}
-      <div className="why-container">
+      <div className="why-container1">
 
-        <div className="why-img">
+        <div className="why-img1">
           <img src="/ad39.webp" alt="tv ads" />
         </div>
 
-        <div className="why-text">
+        <div className="why-text1">
           <h2>Why Choose TV Ads?</h2>
 
           <p>
@@ -261,11 +261,11 @@ const TvAdd = () => {
 
 
       {/* Section 2 */}
-      <div className="why-container reverse">
+      <div className="why-container1 reverse1">
 
        
 
-        <div className="why-text">
+        <div className="why-text1">
           <h2>Maximize Your Reach</h2>
 
           <p>
@@ -279,7 +279,7 @@ const TvAdd = () => {
           </p>
         </div>
 
-         <div className="why-img">
+         <div className="why-img1">
           <img src="/ad40.webp" alt="reach" />
         </div>
 
