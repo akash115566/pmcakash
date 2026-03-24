@@ -367,15 +367,65 @@ padding:20px 1%;
 background:#111;
 }
 
-/* top heading */
-
-.section-heading2{
-text-align:center;
-font-size:3rem;
-color:#f5b300;
-margin-bottom:60px;
+.services-heading {
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
 }
 
+/* Base white text */
+.services-heading {
+  color: #fff;
+}
+
+/* Yellow animated wave layer */
+.services-heading::before {
+  content: "About & Services";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #f5c33c;
+  overflow: hidden;
+
+  /* Wave effect */
+clip-path: polygon(
+  0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+  50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+  100% 0%, 0% 0%
+);
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* Animation keyframes */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 60%, 10% 65%, 20% 55%, 30% 65%, 40% 55%, 
+      50% 65%, 60% 55%, 70% 65%, 80% 55%, 90% 65%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 55%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 
+      50% 60%, 60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 55%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 60%, 10% 65%, 20% 55%, 30% 65%, 40% 55%, 
+      50% 65%, 60% 55%, 70% 65%, 80% 55%, 90% 65%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+}
 /* container */
 
 .services-container2{
@@ -405,38 +455,60 @@ color:#f5c33c;
 text-align: center;
 margin-top:20px;
 }
+/* .services-left2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+} */
 
 .services-left2 img {
   width: 100%;
   max-width: 600px;
   padding: 20px;
   margin: 20px 0;
-  border-radius: 10px;
+  border-radius: 15px;
 
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.6s ease, filter 0.6s ease;
 }
 
-/* Hover Animation */
-.services-left2:hover img {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 10px 40px rgba(245, 179, 0, 0.6);
-}
-@keyframes floatImage {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
+/* 🔥 Default slight blur + dim */
 .services-left2 img {
-  animation: floatImage 4s ease-in-out infinite;
+  filter: brightness(0.9) blur(1px);
 }
 
+/* 🚀 Hover = focus + zoom */
+.services-left2:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.1) blur(0px);
+}
+
+/* ✨ Shine effect layer */
+.services-left2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* 🔥 Shine animation on hover */
+.services-left2:hover::before {
+  animation: shineMove 1s ease forwards;
+}
+
+@keyframes shineMove {
+  100% {
+    left: 130%;
+  }
+}
 .services-left2 p{
 font-size:18px;
 font-weight: 500;
@@ -673,12 +745,60 @@ margin-bottom: 20px;
 }
 
 .services-heading1 {
+  position: relative;
   font-size: 3rem;
   font-weight: 700;
-  color: #f5c33c;
+  text-align: center;
+  color: #fff;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
+/* 🌊 Yellow Wave Layer */
+.services-heading1::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+}
 /* 4 cards in one row */
 .services-container1 {
   display: grid;
@@ -837,10 +957,59 @@ margin-bottom: 20px;
 
 /* HEADING */
 .why-heading2 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
-  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* 🌊 Yellow Wave Layer */
+.why-heading2::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   color: #f5c33c;
-  margin-bottom: 50px;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Same Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 /* GRID CONTAINER */
@@ -969,10 +1138,59 @@ margin-bottom: 20px;
 }
 
 .ipl-heading {
+  position: relative;
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
+  color: #fff;
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* 🌊 Yellow Wave Layer */
+.ipl-heading::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Same Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 /* Single Column */
@@ -1122,11 +1340,59 @@ margin-bottom: 20px;
 }
 
 .slider-heading4 {
+  position: relative;
   font-size: 3rem;
-  color: #f5c33c;
-  text-align: center;
   font-weight: 700;
-  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* 🌊 Yellow Wave Layer */
+.slider-heading4::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Same Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 /* Slider */
@@ -1271,11 +1537,59 @@ margin-bottom: 20px;
 }
 
 .slider-heading5 {
+  position: relative;
   font-size: 3rem;
-  color: #f5c33c;
-  text-align: center;
   font-weight: 700;
-  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* 🌊 Yellow Wave Layer */
+.slider-heading5::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Same Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
  .slider-wrapper5 p{
   text-align: center;
@@ -1419,12 +1733,60 @@ margin-bottom: 20px;
   background: #0b0b0b;
 }
 
-/* ===== HEADING ===== */
 .slider-heading7 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
-  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* 🌊 Yellow Wave Layer */
+.slider-heading7::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   color: #f5c33c;
-  margin-bottom: 10px;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Same Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 /* ===== SLIDER ===== */
@@ -1566,10 +1928,60 @@ margin-bottom: 20px;
 }
 
 .exclusive-heading {
+  position: relative;
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+  letter-spacing: 2px;
+}
+
+/* 🌊 Yellow Wave Layer */
+.exclusive-heading::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   color: #f5c33c;
-  margin-bottom: 50px;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 .exclusive-container {
@@ -1731,10 +2143,60 @@ margin-bottom: 20px;
 }
 
 .exclusive-heading2 {
+  position: relative;
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+  letter-spacing: 2px;
+}
+
+/* 🌊 Yellow Wave Layer */
+.exclusive-heading2::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 .exclusive-container2 {
@@ -1889,10 +2351,60 @@ margin-bottom: 20px;
 }
 
 .exclusive-heading3 {
-  font-size: 2rem;
+  position: relative;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+/* 🌊 Yellow Wave Layer */
+.exclusive-heading3::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 .exclusive-container3 {
@@ -2055,10 +2567,60 @@ margin-bottom: 20px;
 }
 
 .exclusive-heading4 {
-  font-size: 36px;
+  position: relative;
+  font-size: 3rem;
   font-weight: 700;
-  color: #f4b400;
-  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+/* 🌊 Yellow Wave Layer */
+.exclusive-heading4::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #f5c33c;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 /* Grid Auto Responsive */
@@ -2384,7 +2946,61 @@ margin-bottom: 20px;
   padding: 70px 6%;
   background: #0b0b0b;
 }
+.slider-headin9 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
 
+/* 🌊 Yellow Wave Layer */
+.slider-headin9::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #f4b400;
+  overflow: hidden;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2.5s infinite linear;
+}
+
+/* 🔄 Wave Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+}
 /* ===== SLIDER ===== */
 .slider9 {
   width: 100%;
@@ -2527,12 +3143,62 @@ margin-bottom: 20px;
   color: #fff;
 }
 
-/* Heading */
-.hotdeal-heading {
-  font-size: 36px;
+.wave-heading {
+  position: relative;
+  display: inline-block;   /* ✅ VERY IMPORTANT */
+  font-size: 3rem;
   font-weight: 700;
-  color: #f5c542;
-  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Yellow Wave Layer */
+.wave-heading::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f4b400;
+
+  /* 👇 PERFECT OVERLAY FIX */
+  pointer-events: none;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 .hotdeal-subtext {
@@ -2655,12 +3321,60 @@ margin-bottom: 20px;
   text-align: center;
 }
 
-/* Heading */
-.contact-heading {
+.wave-heading {
+  position: relative;
+  display: inline-block;   /* ✅ important */
   font-size: 3rem;
-  color: #f5c542;
-  margin-bottom: 40px;
   font-weight: 700;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 🌊 Yellow Wave */
+.wave-heading::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f4b400;
+  pointer-events: none;
+
+  clip-path: polygon(
+    0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+    50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+    100% 0%, 0% 0%
+  );
+
+  animation: waveMove 2s infinite ease-in-out;
+}
+
+/* 🔄 Animation */
+@keyframes waveMove {
+  0% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%, 10% 75%, 20% 45%, 30% 75%, 40% 45%, 
+      50% 75%, 60% 45%, 70% 75%, 80% 45%, 90% 75%, 100% 60%, 
+      100% 0%, 0% 0%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+      0% 70%, 10% 80%, 20% 50%, 30% 80%, 40% 50%, 
+      50% 80%, 60% 50%, 70% 80%, 80% 50%, 90% 80%, 100% 70%, 
+      100% 0%, 0% 0%
+    );
+  }
 }
 
 /* Container */

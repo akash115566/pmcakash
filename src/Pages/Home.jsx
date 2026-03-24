@@ -405,9 +405,9 @@ const slides1 = [
 
     <section className="services-section2" style={{backgroundColor:"#111"}}>
 
-      <h2 className="section-heading2">
-       About & Services
-      </h2>
+    <h2 className="services-heading">
+  About & Services
+</h2>
 
       <div className="services-container2">
 
@@ -464,7 +464,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <section className="services-section1" style={{backgroundColor:"#111"}}>
-        <h2 className="services-heading1">Our Services</h2>
+<h2 className="services-heading1" data-text="Our Services">
+  Our Services
+</h2>
 
         <div className="services-container1">
           <div className="service-card1">
@@ -502,7 +504,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
        <section className="why-section2">
-      <h2 className="why-heading2">Why Choose Us</h2>
+    <h2 className="why-heading2" data-text="Why Choose Us">
+  Why Choose Us
+</h2>
 
       <div className="why-container2">
         {data2.map((item, index) => (
@@ -517,7 +521,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <section className="ipl-section">
-        <h2 className="ipl-heading">IPL Advertising</h2>
+   <h2 className="ipl-heading" data-text="IPL Advertising">
+  IPL Advertising
+</h2>
 
         <div className="ipl-container">
 
@@ -561,7 +567,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
       </section>
 
       <div className="slider-wrapper4">
-        <h2 className="slider-heading4" >Exclusive Advertising</h2>
+     <h2 className="slider-heading4" data-text="Exclusive Advertising">
+  Exclusive Advertising
+</h2>
         <div className="slider4">
           <div className="slide-track4">
             {images4.concat(images4).map((img, index) => (
@@ -577,7 +585,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <div className="slider-wrapper5" style={{ background: "#111" }}>
-        <h2 className="slider-heading5">Premium Channels</h2>
+       <h2 className="slider-heading5" data-text="Premium Channels">
+  Premium Channels
+</h2>
         <p style={{ textAlign: "center", color: "#fff" }}>Apne brand ko top TV & OTT channels par showcase karein. Smooth slider me premium partner channels dekhein.</p>
         <div className="slider5">
           <div className="slide-track5">
@@ -595,7 +605,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <div className="slider-wrapper7">
-        <h2 className="slider-heading7" >News Channels</h2>
+       <h2 className="slider-heading7" data-text="News Channels">
+  News Channels
+</h2>
         <p style={{ textAlign: "center", color: "#fff" }}>Bharat ke top news channels par apna brand showcase karein.</p>
         <div className="slider7">
           <div className="slide-track7">
@@ -630,9 +642,12 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <section className="exclusive-media-section">
-        <h2 className="exclusive-heading">
-          OUR EXCLUSIVE ADVERTISING MEDIA
-        </h2>
+        <h2 
+  className="exclusive-heading" 
+  data-text="OUR EXCLUSIVE ADVERTISING MEDIA"
+>
+  OUR EXCLUSIVE ADVERTISING MEDIA
+</h2>
 
         <div className="exclusive-container">
           {cards.map((card, index) => (
@@ -665,9 +680,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <section className="exclusive-media-section2">
-      <h2 className="exclusive-heading2">
-          OUR AWARDS
-        </h2>
+    <h2 className="exclusive-heading2" data-text="OUR AWARDS">
+  OUR AWARDS
+</h2>
         <div className="exclusive-container2">
           {cards2.map((card, index) => (
             <div className="exclusive-card2" key={index}>
@@ -685,9 +700,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
       </section>
 
       <section className="exclusive-media-section3">
-        <h2 className="exclusive-heading3" >
-          Celebrities
-        </h2>
+      <h2 className="exclusive-heading3" data-text="Celebrities">
+  Celebrities
+</h2>
         <div className="exclusive-container3">
           {cards3.map((card, index) => (
             <div className="exclusive-card3" key={index}>
@@ -703,9 +718,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
       <section className="exclusive-media-section4">
-        <h2 className="exclusive-heading4">
-          Gallery
-        </h2>
+       <h2 className="exclusive-heading4" data-text="Gallery">
+  Gallery
+</h2>
         <div className="exclusive-container4">
           {cards4.map((card, index) => (
             <div className="exclusive-card4" key={index}>
@@ -761,7 +776,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
    <div className="slider-wrapper9">
-        <h2 className="slider-headin9" style={{ textAlign: "center", fontSize: "3rem", color: "#f4b400" }}>Our Clients</h2>
+     <h2 className="slider-headin9" data-text="Our Clients">
+  Our Clients
+</h2>
         <div className="slider9">
           <div className="slide-track9">
             {images9.concat(images4).map((img, index) => (
@@ -776,7 +793,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
       <section className="hotdeal-section">
         <div className="hotdeal-container">
 
-          <h2 className="hotdeal-heading">🔥 Hot Deal Packages</h2>
+        <h2 className="wave-heading" data-text="🔥 Hot Deal Packages">
+  🔥 Hot Deal Packages
+</h2>
 
           <p className="hotdeal-subtext">
             Choose the best package for your production needs
@@ -836,7 +855,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
       <section className="contact-section">
 
-  <h2 className="contact-heading">Contact Us</h2>
+<h2 className="contact-heading wave-heading" data-text="Contact Us">
+  Contact Us
+</h2>
 
   <div className="contact-container">
 
