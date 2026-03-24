@@ -31,6 +31,7 @@ import Disclaimer from "./Pages/Disclaimer";
 import Policy from "./Pages/Policy";
 import Legal from "./Pages/Legal";
 import Founder from "./Pages/Founder";
+import Watch from "./Pages/Watch";
 
 
 const App = () => {
@@ -67,6 +68,7 @@ const App = () => {
                   <Route path="/policy" element={<Policy />} />
                    <Route path="/legal" element={<Legal />} />
                       <Route path="/founder" element={<Founder />} />
+                        <Route path="/watch" element={<Watch />} />
 
         </Routes>
         <Footer />

@@ -163,9 +163,9 @@ const slides1 = [
   { img: "/hsl6.webp", heading: "TV Advertising Just ₹99,000 for 30 Days!",desc: "Boost your brand with our premium TV ads! Reach millions for just ₹99,000/month. Don’t miss out!" },
   { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency" },
   { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE" },
-    { img: "/ht1.jfif", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands reach millions of viewers  campaigns and creative marketing strategies." },
-      { img: "/ht2.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV commercials, corporate films and and creative storytelling." },
-        { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media solutions including advertising planning, broadcasting and to help businesses grow faster." }
+    { img: "/ht4.webp", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands and creative marketing strategies." },
+      { img: "/ht2.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV  and creative storytelling." },
+        { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media and planning, broadcasting and to help businesses grow faster." }
 ];
 
   const [current, setCurrent] = useState(0);
@@ -367,8 +367,8 @@ const slides1 = [
           <h2>{slide.heading}</h2>
            <h3>{slide.desc}</h3>
              <div className="slider-buttons">
-    <button className="btn btn-primary">▶ Watch Showreel</button>
-    <button className="btn btn-outline">Contact Us</button>
+  <Link to="/watch">  <button className="btn btn-primary">▶ Watch Showreel</button></Link>
+   <Link to="/contact"> <button className="btn btn-outline">Contact Us</button></Link>
   </div>
         </div>
         
