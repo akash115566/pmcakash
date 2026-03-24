@@ -11,31 +11,30 @@ html, body, #root {
    background-color: #111
 }
 /* Slider Main Container */
-.slider {
+.slider0 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 0px !important;
 }
 
-.slider-track {
+.slider-track0 {
   display: flex;
   transition: transform 0.6s ease-in-out;
 }
 
-.slide {
+.slide0 {
   min-width: 100%;
   position: relative;
 }
 
-.slide img {
+.slide0 img {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
 
 /* LEFT CONTENT */
-.slide-content {
+.slide-content0 {
   position: absolute;
   left: 60px;
   top: 50%;
@@ -44,18 +43,18 @@ html, body, #root {
   max-width: 500px;
 }
 
-.slide-content h2 {
+.slide-content0 h2 {
   font-size: 45px;
   line-height: 1.2;
 }
 
-.slide-content h3 {
+.slide-content0 h3 {
   font-size: 20px;
   margin-top: 10px;
 }
 
 /* Buttons */
-.slider-buttons{
+.slider-buttons0{
   margin-top: 20px;
   display: flex;
   gap: 20px;
@@ -63,7 +62,7 @@ html, body, #root {
 }
 
 /* Buttons style */
-.btn{
+.btn0{
   padding: 14px 28px;
   font-size: 16px;
   border-radius: 30px;
@@ -72,23 +71,23 @@ html, body, #root {
   white-space: nowrap;
 }
 
-.btn-primary{
+.btn-primary0{
   background: #f5b300;
   color: black;
   border: none;
 }
 
-.btn-primary:hover{
+.btn-primary0:hover{
   background: #ffcc33;
 }
 
-.btn-outline{
+.btn-outline0{
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
 }
 
-.btn-outline:hover{
+.btn-outline0:hover{
   background: #fff;
   color: black;
 }
@@ -96,20 +95,20 @@ html, body, #root {
 /* ========================= */
 /* 📱 Tablet */
 @media (max-width: 1024px) {
-  .slide img {
+  .slide0 img {
     height: 500px;
   }
 
-  .slide-content {
+  .slide-content0 {
     left: 40px;
     max-width: 400px;
   }
 
-  .slide-content h2 {
+  .slide-content0 h2 {
     font-size: 34px;
   }
 
-  .slide-content h3 {
+  .slide-content0 h3 {
     font-size: 18px;
   }
 }
@@ -117,30 +116,30 @@ html, body, #root {
 /* ========================= */
 /* 📱 Mobile */
 @media (max-width: 768px) {
-  .slide img {
+  .slide0 img {
     height: 400px;
   }
 
-  .slide-content {
+  .slide-content0 {
     left: 20px;
     right: 20px;
     max-width: 100%;
   }
 
-  .slide-content h2 {
+  .slide-content0 h2 {
     font-size: 26px;
   }
 
-  .slide-content h3 {
+  .slide-content0 h3 {
     font-size: 16px;
   }
 
-  .slider-buttons{
+  .slider-buttons0{
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .btn{
+  .btn0{
     padding: 12px 20px;
     font-size: 14px;
   }
@@ -150,26 +149,26 @@ html, body, #root {
 /* ========================= */
 /* 📱 480px */
 @media (max-width: 480px) {
-  .slide img {
+  .slide0 img {
     height: 300px;
   }
 
-  .slide-content h2 {
+  .slide-content0 h2 {
     font-size: 22px;
   }
 
-  .slide-content h3 {
+  .slide-content0 h3 {
     font-size: 14px;
   }
 
   /* Buttons side by side */
-  .slider-buttons{
+  .slider-buttons0{
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
 
-  .btn{
+  .btn0{
     flex: 1;
     padding: 10px;
     font-size: 13px;
@@ -211,30 +210,28 @@ html, body, #root {
 /* ========================= */
 /* 📱 Extra Small */
 @media (max-width: 360px) {
-  .slider{
-    margin-top: -90px;
-  }
-  .slide img {
-    height: 260px;
+ 
+  .slide0 img {
+    height: 220px;
   }
 
-  .slide-content h2 {
+  .slide-content0 h2 {
     font-size: 20px;
   }
 
-  .slide-content h3 {
+  .slide-content0 h3 {
     font-size: 14px;
     max-width: 200px;
   }
 
   /* Buttons side by side */
-  .slider-buttons{
+  .slider-buttons0{
     display: flex;
     flex-direction: row;   /* row hi rakho */
     gap: 10px;
   }
 
-  .btn{
+  .btn0{
     width: auto;           /* ❌ 100% hata diya */
     flex: 1;               /* equal width le lenge */
     padding: 10px;

@@ -353,22 +353,22 @@ const slides1 = [
   return (
 
     <>
-    <section className="slider">
+    <section className="slider0" >
   <div
-    className="slider-track"
+    className="slider-track0"
     style={{ transform: `translateX(-${current * 100}%)` }}
   >
     {slides1.map((slide, index) => (
-      <div className="slide" key={index}>
+      <div className="slide0" key={index}>
         
         <img src={slide.img} alt="slide" />
 
-        <div className="slide-content">
+        <div className="slide-content0">
           <h2>{slide.heading}</h2>
            <h3>{slide.desc}</h3>
-             <div className="slider-buttons">
-  <Link to="/watch">  <button className="btn btn-primary">▶ Watch Showreel</button></Link>
-   <Link to="/contact"> <button className="btn btn-outline">Contact Us</button></Link>
+             <div className="slider-buttons0">
+  <Link to="/watch">  <button className="btn0 btn-primary0">▶ Watch Showreel</button></Link>
+   <Link to="/contact"> <button className="btn0 btn-outline0">Contact Us</button></Link>
   </div>
         </div>
         
