@@ -164,7 +164,7 @@ const slides1 = [
   { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency" },
   { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE" },
     { img: "/ht4.webp", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands and creative marketing strategies." },
-      { img: "/ht2.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV  and creative storytelling." },
+      { img: "/ht6.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV  and creative storytelling." },
         { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media and planning, broadcasting and to help businesses grow faster." }
 ];
 
@@ -532,7 +532,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
             <div className="ipl-overlay">
               <h3>Stadium Branding</h3>
               <p>Get maximum exposure during IPL matches with stadium banners, stands, and boundary rope branding...</p>
-              <Link to="/stadium-branding">Read More →</Link>
+              <Link to="/stadium-Branding">Read More →</Link>
             </div>
           </div>
 

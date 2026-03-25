@@ -71,6 +71,21 @@ const galleryData = [
     { id: 67, img: "/g67.webp" },
     { id: 68, img: "/g68.webp" },
     { id: 69, img: "/g69.webp" },
+       { id: 70, img: "/g70.webp" },
+    { id: 71, img: "/g71.webp" },
+    { id: 72, img: "/g72.webp" },
+    { id: 73, img: "/g73.webp" },
+    { id: 74, img: "/g74.webp" },
+    { id: 75, img: "/g75.webp" },
+    { id: 76, img: "/g76.webp" },
+    { id: 77, img: "/g77.webp" },
+    { id: 78, img: "/g78.webp" },
+    { id: 79, img: "/g79.webp" },
+    { id: 80, img: "/g80.webp" },
+    { id: 81, img: "/g81.webp" },
+    { id: 82, img: "/g82.webp" },
+    { id: 83, img: "/g83.webp" },
+    { id: 84, img: "/g84.webp" },
 
 ];
 function Gallery() {

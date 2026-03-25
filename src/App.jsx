@@ -32,6 +32,7 @@ import Policy from "./Pages/Policy";
 import Legal from "./Pages/Legal";
 import Founder from "./Pages/Founder";
 import Watch from "./Pages/Watch";
+import StadiumBranding from "./Pages/Stadium-branding";
 
 
 const App = () => {
@@ -69,6 +70,7 @@ const App = () => {
                    <Route path="/legal" element={<Legal />} />
                       <Route path="/founder" element={<Founder />} />
                         <Route path="/watch" element={<Watch />} />
+                          <Route path="/stadium-Branding" element={<StadiumBranding />} />
 
         </Routes>
         <Footer />
