@@ -155,17 +155,94 @@ const services = [
   
 
 const slides1 = [
-  { img: "/hsl1.webp", heading: "POOJA MOVIE  CREATIONS ",desc: "BEST PRODUCTION COMPANY CELEBRATING 17 YEARS OF EXCELLENCE" },
-  { img: "/hsl2.webp", heading: "POOJA MOVIE  CREATIONS",desc: "BEST TELESSHOPPING MAKERS CELEBRATING 17BYEARS OF EXCELLENCE" },
-  { img: "/hsl3.webp", heading: "Elevate Your Brand Visually",desc: "India's leading ad film makers and brand promotion agency" },
-  { img: "/hsl4.webp", heading: "Your Vision, Our Cinematic Excellence",desc: "Highlights collaboration and quality" },
-  { img: "/hsl5.webp", heading: "Professional Product Shoot Services" ,desc: "Clear message that Pooja Movie Creations provides professional product shoot services"},
-  { img: "/hsl6.webp", heading: "TV Advertising Just ₹99,000 for 30 Days!",desc: "Boost your brand with our premium TV ads! Reach millions for just ₹99,000/month. Don’t miss out!" },
-  { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency" },
-  { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE" },
-    { img: "/ht4.webp", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands and creative marketing strategies." },
-      { img: "/ht6.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV  and creative storytelling." },
-        { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media and planning, broadcasting and to help businesses grow faster." }
+  { img: "/hsl1.webp", heading: "POOJA MOVIE  CREATIONS ",desc: "BEST PRODUCTION COMPANY CELEBRATING 17 YEARS OF EXCELLENCE" , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+  { img: "/hsl2.webp", heading: "POOJA MOVIE  CREATIONS",desc: "BEST TELESSHOPPING MAKERS CELEBRATING 17BYEARS OF EXCELLENCE"  , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+  { img: "/hsl3.webp", heading: "Elevate Your Brand Visually",desc: "India's leading ad film makers and brand promotion agency" , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+  { img: "/hsl4.webp", heading: "Your Vision, Our Cinematic Excellence",desc: "Highlights collaboration and quality" , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+  { img: "/hsl5.webp", heading: "Professional Product Shoot Services" ,desc: "Clear message that Pooja Movie Creations provides professional product shoot services" , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+  { img: "/hsl6.webp", heading: "TV Advertising Just ₹99,000 for 30 Days!",desc: "Boost your brand with our premium TV ads! Reach millions for just ₹99,000/month. Don’t miss out!"  , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+  { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency", extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ] },
+  { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE", extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ] },
+    { img: "/ht4.webp", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands and creative marketing strategies.", extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ] },
+      { img: "/ht6.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV  and creative storytelling." , extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ]},
+        { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media and planning, broadcasting and to help businesses grow faster.", extra: "We don’t just promote, we help scale your brand effectively.",
+    points: [
+      "Brand positioning",<br/>,
+      "Trust building planning",
+      "Lead generation strategy", "Domestic market reach",
+      "Product promotion",
+      "Customer targeting"
+    ] }
 ];
 
   const [current, setCurrent] = useState(0);
@@ -366,6 +443,12 @@ const slides1 = [
         <div className="slide-content0">
           <h2>{slide.heading}</h2>
            <h3>{slide.desc}</h3>
+           <h3>{slide.extra}</h3>
+          <h3>
+  {slide.points.map((point, index) => (
+    <div key={index}>{point}</div>
+  ))}
+</h3>
              <div className="slider-buttons0">
   <Link to="/watch">  <button className="btn0 btn-primary0">▶ Watch Showreel</button></Link>
    <Link to="/contact"> <button className="btn0 btn-outline0">Contact Us</button></Link>
@@ -541,7 +624,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
             <div className="ipl-overlay">
               <h3>LED Screen Ads</h3>
               <p>Advertise on stadium LED screens during live matches, grabbing attention of both stadium audiences...</p>
-              <Link to="/team-sponsorship">Read More →</Link>
+              <Link to="/team">Read More →</Link>
             </div>
           </div>
 

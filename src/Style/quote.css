@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* PAGE */
+.quote-page {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #fff;
+  text-align: center;
+}
+
+/* MAIN HEADING */
+.quote-main-heading {
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.quote-container {
+  max-width: 600px;
+  margin: auto;
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* SUB HEADING */
+.quote-subheading {
+  margin-bottom: 25px;
+  color: gold;
+}
+
+/* FORM */
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS */
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* FILE */
+.file-input {
+  text-align: left;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* BUTTON */
+.quote-form button {
+  background: gold;
+  color: #000;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quote-form button:hover {
+  background: #fff;
+}
+
+/* 📱 RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .quote-main-heading {
+    font-size: 2rem;
+  }
+
+  .quote-container {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .quote-main-heading {
+    font-size: 1.6rem;
+  }
+
+  .quote-container {
+    padding: 20px;
+  }
+
+  .quote-form input,
+  .quote-form select,
+  .quote-form textarea {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .quote-main-heading {
+    font-size: 1.4rem;
+  }
+}

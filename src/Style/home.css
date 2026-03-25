@@ -212,16 +212,18 @@ html, body, #root {
 @media (max-width: 360px) {
  
   .slide0 img {
-    height: 220px;
+    height: 250px;
   }
 
   .slide-content0 h2 {
-    font-size: 20px;
+    font-size: 16px;
+    padding: 0px;
   }
 
   .slide-content0 h3 {
-    font-size: 14px;
-    max-width: 200px;
+    font-size: 10px;
+    max-width: 300px;
+    padding: -10px;
   }
 
   /* Buttons side by side */

@@ -178,7 +178,7 @@ const StadiumBranding = () => {
 
       {/* Buttons */}
       <div className="cta-buttons">
-        <a href="/contact" className="btn quote-btn">
+        <a href="/quote" className="btn quote-btn">
           Get Quote
         </a>
 

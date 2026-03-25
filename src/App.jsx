@@ -33,6 +33,9 @@ import Legal from "./Pages/Legal";
 import Founder from "./Pages/Founder";
 import Watch from "./Pages/Watch";
 import StadiumBranding from "./Pages/Stadium-branding";
+import Quote from "./Pages/Quote";
+import Team from "./Pages/Team";
+import Jersey from "./Pages/Jersey";
 
 
 const App = () => {
@@ -65,12 +68,15 @@ const App = () => {
           <Route path="/footer" element={<Footer />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
-           <Route path="/disclaimer" element={<Disclaimer />} />
-                  <Route path="/policy" element={<Policy />} />
-                   <Route path="/legal" element={<Legal />} />
-                      <Route path="/founder" element={<Founder />} />
-                        <Route path="/watch" element={<Watch />} />
-                          <Route path="/stadium-Branding" element={<StadiumBranding />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/policy" element={<Policy />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/founder" element={<Founder />} />
+          <Route path="/watch" element={<Watch />} />
+          <Route path="/stadium-Branding" element={<StadiumBranding />} />
+          <Route path="/quote" element={<Quote />} />
+           <Route path="/team" element={<Team />} />
+            <Route path="/digital-promotion" element={<Jersey />} />
 
         </Routes>
         <Footer />
