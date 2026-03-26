@@ -68,14 +68,13 @@ const images4 = [
 
 
 const images5 = [
-  "/hn1.webp",
-  "/hn2.webp",
-  "/hn3.webp",
-  "/hn4.webp",
-  "/hn5.webp",
-  "/hn6.webp",
-  "/hn7.webp",
-  "/hn8.webp",
+  { img: "/hn1.webp", title: "Zee TV" },
+  { img: "/hn2.webp", title: "Sony TV" },
+  { img: "/hn3.webp", title: "Star Gold" },
+  { img: "/hn4.webp", title: "Colors HD" },
+  { img: "/hn5.webp", title: "&TV" },
+  { img: "/hn7.webp", title: "Zee Tv" },
+  { img: "/hn8.webp", title: "Sony Sab" },
 ];
 
 
@@ -717,23 +716,32 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
 
 
+<div className="slider-wrapper5" style={{ background: "#111" }}>
+  
+  <h2 className="slider-heading5" data-text="Premium Channels">
+    Premium Channels
+  </h2>
 
-      <div className="slider-wrapper5" style={{ background: "#111" }}>
-       <h2 className="slider-heading5" data-text="Premium Channels">
-  Premium Channels
-</h2>
-        <p style={{ textAlign: "center", color: "#fff" }}>Apne brand ko top TV & OTT channels par showcase karein. Smooth slider me premium partner channels dekhein.</p>
-        <div className="slider5">
-          <div className="slide-track5">
-            {images5.concat(images5).map((img, index) => (
-              <div className="slide5" key={index}>
-                <img src={img} alt="slider" />
-              </div>
-            ))}
+  <p style={{ textAlign: "center", color: "#fff" }}>
+    Apne brand ko top TV & OTT channels par showcase karein.
+    Smooth slider me premium partner channels dekhein.
+  </p>
+
+  <div className="slider5">
+    <div className="slide-track5">
+      {images5.concat(images5).map((item, index) => (
+        <div className="slide5" key={index}>
+          <img src={item.img} alt="slider" />
+
+          <div className="slide-text">
+            {item.title}
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
 
+</div>
 
 
 
