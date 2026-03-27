@@ -8,51 +8,51 @@ const Jersey = () => {
   const navigate = useNavigate();
 
 
-  const services3 = [
+  const jersey3 = [
   {
-    title: "Perimeter LED Boards",
-    desc: "Dynamic perimeter LED displays that rotate your brand content throughout the match, visible in every camera shot and replay.",
+    title: "Team Jersey Sponsorship",
+    desc: "Complete team jersey branding with your logo prominently displayed on all players' uniforms throughout the tournament.",
   },
   {
-    title: "Giant Stadium Screens",
-    desc: "Massive LED screens for maximum impact, displaying your brand during strategic timeouts, innings breaks, and celebrations.",
+    title: "Individual Player Branding",
+    desc: "Partner with specific star players for personalized branding opportunities on jerseys, helmets, and equipment..",
   },
   {
-    title: "Corner LED Displays",
-    desc: "Strategic corner positioning ensures your brand is visible from every angle of the stadium and television coverage.",
+    title: "Helmet & Equipment Branding",
+    desc: "Extend your brand presence to helmets, bats, gloves, and other equipment used by players during matches.",
   },
   {
-    title: "Animated Brand Content",
-    desc: "Create engaging animated advertisements that stand out from static displays and capture viewer attention effectively.",
+    title: "Captain's Armband Branding",
+    desc: "Exclusive branding opportunity on team captain's armband, visible during toss, team discussions, and celebrations.",
   },
   {
-    title: "Real-time Integration",
-    desc: "Dynamic content that can be updated in real-time to match game situations, player performances, and audience engagement.",
+    title: "Wicket Keeper Gear Branding",
+    desc: "Special branding opportunities on wicket keeper's gloves, pads, and gear, visible in close-up shots and replays.",
   },
   {
-    title: "Multi-format Support",
-    desc: "Support for various content formats including videos, animations, static images, and interactive brand experiences.",
+    title: "Training Kit Sponsorship",
+    desc: "Brand visibility during practice sessions, warm-ups, and training activities broadcast before matches.",
   },
 ];
 
 
 
-  const services4 = [
+  const jersey4 = [
   {
-    title: "Dynamic Content",
-    desc: "Unlike static banners, LED screens allow for animated, video, and interactive content that captures and holds attention.",
+    title: "Continuous Visibility",
+    desc: "Your brand is visible throughout the entire match duration, from first ball to last, ensuring maximum exposure time.",
   },
   {
-    title: "Perfect Visibility",
-    desc: "High-brightness LED technology ensures perfect visibility in all lighting conditions, day or night matches.",
+    title: "Star Association",
+    desc: "Direct association with cricket superstars and fan favorites, enhancing brand prestige and emotional connection.",
   },
   {
-    title: "Broadcast Quality",
-    desc: "Ultra-high resolution displays look crisp and professional on television broadcasts, enhancing your brand image.",
+    title: "Close-up Coverage",
+    desc: "Television cameras frequently focus on players, ensuring your brand appears in close-up shots and replays.",
   },
   {
-    title: "Flexible Scheduling",
-    desc: "Schedule different content for different match moments - timeouts, boundaries, wickets, and celebrations",
+    title: "Global Reach",
+    desc: "IPL's international broadcast ensures your brand reaches cricket fans across multiple countries and demographics.",
   }
  
 ];
@@ -70,52 +70,52 @@ const Jersey = () => {
         </div>
 
         {/* Heading */}
-        <h1>📺 IPL LED Screen Advertising</h1>
+        <h1>👕 IPL Players Jersey Branding</h1>
 
         <p className="subtitle11">
-         High-impact digital advertising on stadium LED screens during live IPL matches.
+        Premium jersey sponsorship and player branding opportunities in IPL cricket
         </p>
 
         {/* Image */}
         <div className="jersey-image1">
-          <img src="/team1.webp" alt="stadium" />
+          <img src="/j1.webp" alt="stadium" />
         </div>
 
       </div>
 
       {/* 📄 OVERVIEW */}
       <div className="overview-section11">
-        <h2>🏟️ LED Screen Advertising Overview</h2>
+        <h2>👕 Jersey Branding Overview</h2>
         <p>
-         Pooja Movie Creations provides cutting-edge LED screen advertising solutions that deliver dynamic, high-resolution brand content directly to stadium audiences and television viewers. Our LED screen placements include perimeter boards, giant screens, corner displays, and strategic digital signage throughout the stadium. With crystal-clear visuals and the ability to display animated content, your brand message captures attention like never before during the most exciting moments of IPL cricket.
+        Pooja Movie Creations offers exclusive IPL players jersey branding opportunities that place your brand directly on the cricket field with every ball bowled and every run scored. Our jersey sponsorship solutions include team jersey partnerships, individual player sponsorships, helmet branding, and equipment partnerships. With players being the center of attention throughout the match, your brand gains continuous visibility and association with cricket's biggest stars and most exciting moments.
         </p>
       </div>
 
       {/* 📊 STATS */}
       <div className="stats-section11">
 
-        <h2>🏟️ LED Advertising Impact</h2>
+        <h2>👕 Jersey Branding Impact</h2>
 
         <div className="stats-grid11">
 
           <div className="stat-card11">
-            <h3>4K</h3>
-            <p>Ultra HD Resolution</p>
+            <h3>11</h3>
+            <p>Players Per Team</p>
           </div>
 
           <div className="stat-card11">
-            <h3>500M+</h3>
-            <p>Total Impressions</p>
+            <h3>600M+</h3>
+            <p>Global Viewership</p>
           </div>
 
           <div className="stat-card11">
-            <h3>15 Sec</h3>
-            <p>Average View Time</p>
+            <h3>240</h3>
+            <p>Minutes Per Match</p>
           </div>
 
           <div className="stat-card11">
-            <h3>100%</h3>
-            <p>Visibility Guarantee</p>
+            <h3>8</h3>
+            <p>Teams Available</p>
           </div>
 
         </div>
@@ -125,12 +125,12 @@ const Jersey = () => {
 
       {/* TOP HEADING */}
       <h2 className="jersey-heading1">
-        🏟️ Our LED Screen Solutions
+        👕 Our Jersey Branding Services
       </h2>
 
       {/* CARDS */}
       <div className="jersey-grid1">
-        {services3.map((item, index) => (
+        {jersey3.map((item, index) => (
           <div className="jersey-card1" key={index}>
             <h3>
               <FaStar className="star1-icon11" /> {item.title}
@@ -148,12 +148,12 @@ const Jersey = () => {
 
       {/* TOP HEADING */}
       <h2 className="jersey-heading1">
-        🏟️ LED Screen Advantages
+       👕 Why Choose Jersey Branding?
       </h2>
 
       {/* CARDS */}
       <div className="jersey-grid1">
-        {services4.map((item, index) => (
+        {jersey4.map((item, index) => (
           <div className="jersey-card1" key={index}>
             <h3>
               <FaStar className="jersey-icon2" /> {item.title}
@@ -169,11 +169,11 @@ const Jersey = () => {
      <div className="cta-section11">
 
       {/* Heading */}
-      <h2>Light Up Your Brand!</h2>
+      <h2>Wear Your Brand to Victory!</h2>
 
       {/* Paragraph */}
       <p>
-      Make your brand shine with Pooja Movie Creations' premium LED screen advertising solutions. Contact us to secure your digital advertising space!
+     Join the champions with Pooja Movie Creations' exclusive IPL jersey branding opportunities. Contact us to secure your player partnership today!
       </p>
 
       {/* Buttons */}

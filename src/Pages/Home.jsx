@@ -692,7 +692,7 @@ For over 18 years, we have been creating impactful advertising solutions that co
             <div className="ipl-overlay">
               <h3>Digital & OTT Ads</h3>
               <p>Run targeted IPL ads on Hotstar, JioCinema, and social media platforms for engaging millions of cricket fans...</p>
-              <Link to="/tv-commercials">Read More →</Link>
+              <Link to="/ott">Read More →</Link>
             </div>
           </div>
 

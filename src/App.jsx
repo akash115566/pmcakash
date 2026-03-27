@@ -36,6 +36,7 @@ import StadiumBranding from "./Pages/Stadium-branding";
 import Quote from "./Pages/Quote";
 import Team from "./Pages/Team";
 import Jersey from "./Pages/Jersey";
+import Ott from "./Pages/Ott";
 
 
 const App = () => {
@@ -77,6 +78,7 @@ const App = () => {
           <Route path="/quote" element={<Quote />} />
            <Route path="/team" element={<Team />} />
             <Route path="/digital-promotion" element={<Jersey />} />
+            <Route path="/ott" element={<Ott />} />
 
         </Routes>
         <Footer />
