@@ -255,15 +255,18 @@ const slides1 = [
     // ]
   },
         { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media and planning, broadcasting and to help businesses grow faster.",
-    //        extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",<br/>,
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ] 
+   
+  },
+     { img: "/hsl11.jpeg", 
+   
+  },
+     { img: "/hsl12.jpeg",
+   
+  },
+     { img: "/hsl13.jpeg", 
+   
   }
+
 ];
 
 
@@ -602,29 +605,36 @@ For over 18 years, we have been creating impactful advertising solutions that co
 </h2>
 
         <div className="services-container1">
+
+          <Link to="/tvadd">
           <div className="service-card1">
             <img src="/hs1.webp" alt="Service 1" />
             <h3>TV Advertising</h3>
             <p>Expand your brand’s reach with Pooja Movie Creations’ TV Advertising. With nationwide visibility and unmatched...</p>
-          </div>
-
+          </div></Link>
+          
+          <Link to="/tvc">
           <div className="service-card1">
             <img src="/hs2.webp" alt="Service 2" />
             <h3>TVC Making</h3>
             <p>Bring your brand vision to life with Pooja Movie Creations’ TVC Making. From concept ideation to full-scale ...</p>
-          </div>
+          </div></Link>
 
+
+          <Link to="/tvadfilm">
           <div className="service-card1">
             <img src="/hs3.webp" alt="Service 3" />
             <h3>TV Ad Film Production</h3>
             <p>Make your brand unforgettable with Pooja Movie Creations’ TV Ad Film Production. From creative...</p>
-          </div>
+          </div></Link>
 
+
+          <Link to="/web">
           <div className="service-card1">
             <img src="/hs4.webp" alt="Service 4" />
             <h3>Web Series Production</h3>
             <p>Bring stories to life with Pooja Movie Creations’ Web Series Production. From concept development to high-quality...</p>
-          </div>
+          </div></Link>
         </div>
 
 
