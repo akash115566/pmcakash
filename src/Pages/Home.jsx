@@ -497,7 +497,7 @@ const scaleData = [
   <section className="scale-section">
       
       <h2 className="scale-heading">
-        We Don’t Just Promote, We Help Scale by Connecting the Right Market & Partners
+        We Do Just Promote, We Help Scale by Connecting the Right Market & Partners
       </h2>
 
       <div className="scale-container">
