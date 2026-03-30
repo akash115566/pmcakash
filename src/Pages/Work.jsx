@@ -4,7 +4,19 @@ import "../Style/work.css";
 const Work = () => {
     return (
         <> 
+         <section className="image-section13">
+
+  <h2 className="section-heading13">OUR POWERFULL WORK WITH THESE BRANDS</h2>
+
+  <div className="image-container13">
+    <img src="/hsl24.jfif" alt="sample" />
+  </div>
+
+</section>
+
         <div className="work-container">
+
+            
 
             <h2 className="work-title">
                 OUR EXCLUSIVE ADVERTISING & BRANDING

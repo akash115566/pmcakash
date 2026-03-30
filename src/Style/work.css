@@ -5,6 +5,71 @@
 }
 
 
+
+.image-section13 {
+  padding: 20px 1%;
+  background: #111;
+  text-align: center;
+}
+
+/* Heading */
+.section-heading13 {
+  color: goldenrod;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Optional underline effect */
+.section-heading13::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Image */
+.image-container13 {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.image-container13 img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+/* 🔥 Tablet */
+@media (max-width: 992px) {
+  .section-heading13 {
+    font-size: 2.2rem;
+  }
+
+  .image-container13 img {
+    height: 350px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .section-heading13 {
+    font-size: 1.8rem;
+  }
+
+  .image-container13 img {
+    height: 250px;
+  }
+}
+
+
+
 .work-container {
   padding: 60px 20px;
   text-align: center;

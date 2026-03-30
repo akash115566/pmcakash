@@ -30,7 +30,7 @@ html, body, #root {
 .slide0 img {
   width: 100%;
   height: 600px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* LEFT CONTENT */
@@ -222,7 +222,7 @@ html, body, #root {
 
 /* Heading */
 .section-heading2 {
-  color: #fff;
+  color: goldenrod;
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 40px;
@@ -367,7 +367,7 @@ html, body, #root {
 
 /* Heading */
 .section-heading11 {
-  color: #fff;
+  color: goldenrod;
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 40px;
@@ -1079,6 +1079,74 @@ margin-bottom: 20px;
     font-size: 14px;
   }
 }
+
+
+
+
+
+.image-section11 {
+  padding: 60px 1%;
+  background: #111;
+  text-align: center;
+}
+
+/* Heading */
+.section-heading11 {
+  color: goldenrod;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Optional underline effect */
+.section-heading11::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Image */
+.image-container11 {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.image-container11 img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+/* 🔥 Tablet */
+@media (max-width: 992px) {
+  .section-heading11 {
+    font-size: 2.2rem;
+  }
+
+  .image-container11 img {
+    height: 350px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .section-heading11 {
+    font-size: 1.8rem;
+  }
+
+  .image-container11 img {
+    height: 250px;
+  }
+}
+
+
 
 
 

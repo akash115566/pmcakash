@@ -155,84 +155,50 @@ const services = [
 
 const slides1 = [
   { img: "/hsl1.webp", heading: "POOJA MOVIE  CREATIONS ",desc: "BEST PRODUCTION COMPANY CELEBRATING 17 YEARS OF EXCELLENCE" , 
-    // extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+  
   },
+  
+  { img: "/hsl24.jfif", 
+  },
+  { img: "/hsl23.jfif", 
+  },
+     { img: "/hsl27.jfif", 
+  },
+   { img: "/hs14.jfif", 
+  },
+   { img: "/hs15.jfif", 
+  },
+   { img: "/hs16.jfif", 
+  },
+   { img: "/hs17.jfif", 
+  },
+   { img: "/hs18.jfif", 
+  },
+   { img: "/hs19.jfif", 
+  },
+   { img: "/hs20.jfif", 
+  },
+
   { img: "/hsl2.webp", heading: "POOJA MOVIE  CREATIONS",desc: "BEST TELESSHOPPING MAKERS CELEBRATING 17BYEARS OF EXCELLENCE"  , 
-    // extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+  
   },
   { img: "/hsl3.webp", heading: "Elevate Your Brand Visually",desc: "India's leading ad film makers and brand promotion agency" ,
-    //  extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+   
   },
   { img: "/hsl4.webp", heading: "Your Vision, Our Cinematic Excellence",desc: "Highlights collaboration and quality" ,
-    //  extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+   
   },
   { img: "/hsl5.webp", heading: "Professional Product Shoot Services" ,desc: "Clear message that Pooja Movie Creations provides professional product shoot services" , 
-    // extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+   
   },
   { img: "/hsl6.webp", heading: "TV Advertising Just ₹99,000 for 30 Days!",desc: "Boost your brand with our premium TV ads! Reach millions for just ₹99,000/month. Don’t miss out!"  ,
-    //  extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+   
   },
   { img: "/hsl7.webp", heading: "Top TV Advertising Media House",desc: "India's leading ad film makers and brand promotion agency", 
-    // extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ] 
+   
   },
   { img: "/hsl8.webp", heading: "POOJA MOVIE CREATONS",desc: "INDIA’S NO 1 BRAND BUILDING COMPANY CELEBRATE 17 YEARS OF EXCELLENCE", 
-    // extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+   
    },
     { img: "/ht4.webp", heading: "TV ADVT AGENCY",desc: "We are a leading TV Advertising Agency helping brands and creative marketing strategies.", 
     //   extra: "We don’t just promote, we help scale your brand effectively.",
@@ -245,14 +211,7 @@ const slides1 = [
     // ] 
   },
       { img: "/ht6.jfif", heading: " BEST PRODUCTION HOUSE",desc: "Our production house creates high quality TV  and creative storytelling." , 
-    //     extra: "We don’t just promote, we help scale your brand effectively.",
-    // points: [
-    //   "Brand positioning",
-    //   "Trust building planning",
-    //   "Lead generation strategy", "Domestic market reach",
-    //   "Product promotion",
-    //   "Customer targeting"
-    // ]
+   
   },
         { img: "/ht3.jfif", heading: "BEST MEDIA HOUSE",desc: "We provide complete media and planning, broadcasting and to help businesses grow faster.",
    
@@ -264,8 +223,8 @@ const slides1 = [
    
   },
      { img: "/hsl13.jpeg", 
-   
   }
+ 
 
 ];
 
@@ -665,6 +624,17 @@ For over 18 years, we have been creating impactful advertising solutions that co
           </Link>
         </div>
       </section>
+
+
+      <section className="image-section11">
+
+  <h2 className="section-heading11">OUR POWERFULL WORK WITH THESE BRANDS</h2>
+
+  <div className="image-container11">
+    <img src="/hsl26.jfif" alt="sample" />
+  </div>
+
+</section>
 
 
        <section className="why-section2">
