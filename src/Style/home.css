@@ -177,35 +177,7 @@ html, body, #root {
 }
 
 
-/* ========================= */
-/* 📱 360px */
-/* @media (max-width: 360px) {
-  .slide img {
-    height: 260px;
-  }
 
-  .slide-content h2 {
-    font-size: 0.8rem;
-    max-width: 200px;
-  }
-
-  .slide-content h3 {
-    font-size: 15px;
-  }
-
-  .slider-buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-  }
-
-  .btn{
-    flex: 1;
-    padding: 8px;
-    font-size: 11px;
-    text-align: center;
-  }
-} */
 
 /* ========================= */
 /* 📱 Extra Small */
@@ -241,50 +213,71 @@ html, body, #root {
     text-align: center;
   }
 }
-/* ============================= */
-/* 💻 Large Screens (1200px+) */
-/* @media (min-width: 1200px) {
-  .slide {
-    height: 550px;
+
+.image-section2 {
+  padding: 0px 2%;
+  background: #111;
+  text-align: center;
+}
+
+/* Heading */
+.section-heading2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Optional underline effect */
+.section-heading2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Image */
+.image-container2 {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+/* 🔥 Tablet */
+@media (max-width: 992px) {
+  .section-heading2 {
+    font-size: 2.2rem;
+  }
+
+  .image-container2 img {
+    height: 350px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .section-heading2 {
+    font-size: 1.8rem;
+  }
+
+  .image-container2 img {
+    height: 250px;
   }
 }
 
 
-@media (max-width: 1024px) {
-  .slide {
-    height: 420px;
-  }
-}
 
-
-@media (max-width: 768px) {
-  .slide {
-    height: 320px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .slide {
-    height: 220px;
-  }
-}
-
-
-@media (max-width: 360px) {
-
-  .slide {
-    min-width: 100%;
-    width: 100%;
-  }
-
-  .slide img {
-    width: auto;
-    height: 100px;   /* height auto karne se image cut nahi hogi 
-
-  }
-
-} */
 
 .scale-section {
   padding: 80px 20px;
@@ -361,6 +354,70 @@ html, body, #root {
 
   .scale-card {
     padding: 20px;
+  }
+}
+
+
+
+.image-section11 {
+  padding: 60px 1%;
+  background: #111;
+  text-align: center;
+}
+
+/* Heading */
+.section-heading11 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Optional underline effect */
+.section-heading11::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Image */
+.image-container11 {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.image-container11 img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 12px;
+}
+
+/* 🔥 Tablet */
+@media (max-width: 992px) {
+  .section-heading11 {
+    font-size: 2.2rem;
+  }
+
+  .image-container11 img {
+    height: 350px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .section-heading11 {
+    font-size: 1.8rem;
+  }
+
+  .image-container11 img {
+    height: 250px;
   }
 }
 

@@ -497,6 +497,17 @@ const scaleData = [
   </div>
 </section>
 
+
+<section className="image-section2">
+
+  <h2 className="section-heading2">OUR WORK WITH THESE BRANDS</h2>
+
+  <div className="image-container2">
+    <img src="/hsl13.jpeg" alt="sample" />
+  </div>
+
+</section>
+
   <section className="scale-section">
       
       <h2 className="scale-heading">
@@ -513,6 +524,16 @@ const scaleData = [
       </div>
 
     </section>
+
+    <section className="image-section11">
+
+  <h2 className="section-heading11">OUR POWERFULL WORK WITH THESE BRANDS</h2>
+
+  <div className="image-container11">
+    <img src="/hsl12.jpeg" alt="sample" />
+  </div>
+
+</section>
 
       {/* <section className="agency-section">
 
