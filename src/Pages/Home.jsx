@@ -457,6 +457,41 @@ const scaleData = [
 </section>
 
 
+ <section className="shooting-section">
+      <h2 className="shooting-heading">Our Shooting Work</h2>
+
+      <div className="shooting-gallery">
+        <img src="/hm1.jfif" alt="work1" />
+        <img src="/hm2.jfif" alt="work2" />
+        <img src="/hm3.jfif" alt="work3" />
+        {/* <img src="/hm4.jfif" alt="work4" /> */}
+      </div>
+
+      <Link to="/shoting" className="more-link">More →</Link>
+    </section>
+
+
+
+
+    <section className="shooting-section1">
+      <h2 className="shooting-heading1">Office Meet and Greet With Clients</h2>
+
+      <div className="shooting-gallery1">
+        <img src="/hm70.jfif" alt="work1" />
+       
+          <img src="/hm72.jfif" alt="work4" />
+        <img src="/hm73.jfif" alt="work3" />
+        <img src="/hm74.jfif" alt="work4" />
+          <img src="/hm75.jfif" alt="work4" />
+      </div>
+
+     
+    </section>
+
+
+
+
+
 <section className="image-section2">
 
 <h2 className="section-heading2" data-text="OUR WORK WITH THESE BRANDS">
@@ -502,7 +537,7 @@ const scaleData = [
 
 </section>
 
-      {/* <section className="agency-section">
+     {/* <section className="agency-section">
 
       {data.map((item, index) => (
         <div className="agency-box" key={index}>

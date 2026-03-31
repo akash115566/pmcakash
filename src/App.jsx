@@ -37,6 +37,7 @@ import Quote from "./Pages/Quote";
 import Team from "./Pages/Team";
 import Jersey from "./Pages/Jersey";
 import Ott from "./Pages/Ott";
+import Shoting from "./Pages/Shoting";
 
 
 const App = () => {
@@ -79,6 +80,7 @@ const App = () => {
            <Route path="/team" element={<Team />} />
             <Route path="/digital-promotion" element={<Jersey />} />
             <Route path="/ott" element={<Ott />} />
+             <Route path="/shoting" element={<Shoting />} />
 
         </Routes>
         <Footer />
