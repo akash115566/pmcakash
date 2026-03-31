@@ -459,7 +459,9 @@ const scaleData = [
 
 <section className="image-section2">
 
-  <h2 className="section-heading2">OUR WORK WITH THESE BRANDS</h2>
+<h2 className="section-heading2" data-text="OUR WORK WITH THESE BRANDS">
+  OUR WORK WITH THESE BRANDS
+</h2>
 
   <div className="image-container2">
     <img src="/hsl13.jpeg" alt="sample" />
@@ -468,10 +470,11 @@ const scaleData = [
 </section>
 
   <section className="scale-section">
-      
-      <h2 className="scale-heading">
-        We Do Just Promote, We Help Scale by Connecting the Right Market & Partners
-      </h2>
+ <h2 className="scale-heading"
+  data-text="We Do Just Promote, We Help Scale by Connecting the Right Market & Partners"
+>
+  We Do Just Promote, We Help Scale by Connecting the Right Market & Partners
+</h2>
 
       <div className="scale-container">
         {scaleData.map((item, index) => (
@@ -486,7 +489,12 @@ const scaleData = [
 
     <section className="image-section11">
 
-  <h2 className="section-heading11">OUR POWERFULL WORK WITH THESE BRANDS</h2>
+<h2
+  className="section-heading11"
+  data-text="OUR POWERFULL WORK WITH THESE BRANDS"
+>
+  OUR POWERFULL WORK WITH THESE BRANDS
+</h2>
 
   <div className="image-container11">
     <img src="/hsl12.jpeg" alt="sample" />
@@ -628,7 +636,9 @@ For over 18 years, we have been creating impactful advertising solutions that co
 
       <section className="image-section11">
 
-  <h2 className="section-heading11">OUR POWERFULL WORK WITH THESE BRANDS</h2>
+<h2 className="section-heading11"   data-text="OUR POWERFULL WORK WITH THESE BRANDS">
+  OUR POWERFULL WORK WITH THESE BRANDS
+</h2>
 
   <div className="image-container11">
     <img src="/hsl26.jfif" alt="sample" />

@@ -53,6 +53,26 @@ const About = () => {
 
       </div>
     </section>
+
+
+    <section className="brand-section">
+  <h2 className="brand-heading">
+    Our Office workings
+  </h2>
+
+  <div className="brand-images">
+    <img src="/ab2.jfif" alt="brand1" />
+    <img src="/ab3.jfif" alt="brand2" />
+    <img src="/ab4.jfif" alt="brand3" />
+    <img src="/ab5.jfif" alt="brand5" />
+    <img src="/ab6.jfif" alt="brand6" />
+     <img src="/ab7.jfif" alt="brand7" />
+    <img src="/ab8.jfif" alt="brand8" />
+    <img src="/ab9.jfif" alt="brand9" />
+     <img src="/ab10.jfif" alt="brand10" />
+  
+  </div>
+</section>
     </>
   );
 };
