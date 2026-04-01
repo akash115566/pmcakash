@@ -222,3 +222,23 @@ html, body, #root {
     font-size: 1.8rem;
   }
 }
+/* Mobile (360px) */
+@media (max-width: 480px) {
+  .brand-images {
+    grid-template-columns: repeat(1, 1fr); /* 👈 2 images */
+  }
+
+  .brand-images img {
+    height: 400px; 
+    object-fit: fill;
+  }
+
+  .brand-heading {
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+
+  .brand-section {
+    padding: 40px 4%;
+  }
+}
