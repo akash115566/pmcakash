@@ -478,11 +478,10 @@ const scaleData = [
 
       <div className="shooting-gallery1">
         <img src="/hm70.jfif" alt="work1" />
-       
-          <img src="/hm72.jfif" alt="work4" />
+           <img src="/hm74.jfif" alt="work4" />
         <img src="/hm73.jfif" alt="work3" />
-        <img src="/hm74.jfif" alt="work4" />
-          <img src="/hm75.jfif" alt="work4" />
+          {/* <img src="/hm75.jfif" alt="work4" />
+             <img src="/hm72.jfif" alt="work4" /> */}
       </div>
 
      

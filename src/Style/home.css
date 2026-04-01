@@ -318,7 +318,8 @@ html, body, #root {
   }
 
   .shooting-gallery img {
-    height:300px;
+    height:350px;
+    object-fit: fill;
   }
 
   .more-link {
@@ -412,7 +413,7 @@ html, body, #root {
   }
 
   .shooting-gallery1 img {
-    height: 180px;
+    height: 300px;
   }
 }
 
