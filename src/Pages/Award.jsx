@@ -3,11 +3,37 @@ import "../Style/award.css";
 
 const awardsData = [
   { id: 1, year: "2015", img: "/aw1.webp" },
-  { id: 2, year: "2016", img: "/aw2.webp"},
+  { id: 2, year: "2016", img: "/aw2.webp" },
   { id: 3, year: "2017", img: "/aw3.webp" },
   { id: 4, year: "2017", img: "/aw4.webp" },
   { id: 5, year: "2018", img: "/aw5.webp" },
-  { id: 6, year: "2019", img: "/aw6.webp"},
+  { id: 6, year: "2019", img: "/aw6.webp" },
+
+  { id: 7, year: "2020", img: "/aw7.jfif" },
+  { id: 8, year: "2020", img: "/aw8.jfif" },
+  { id: 9, year: "2021", img: "/aw9.jfif" },
+  { id: 10, year: "2021", img: "/aw10.jfif" },
+  { id: 11, year: "2022", img: "/aw11.jfif" },
+  { id: 12, year: "2022", img: "/aw12.jfif" },
+  { id: 13, year: "2023", img: "/aw13.jfif" },
+  { id: 14, year: "2023", img: "/aw14.jfif" },
+  { id: 15, year: "2023", img: "/aw15.jfif" },
+  { id: 16, year: "2024", img: "/aw16.jfif" },
+  { id: 17, year: "2024", img: "/aw17.jfif" },
+  { id: 18, year: "2024", img: "/aw18.jfif" },
+  { id: 19, year: "2024", img: "/aw19.jfif" },
+  { id: 20, year: "2024", img: "/aw20.jfif" },
+  { id: 21, year: "2025", img: "/aw21.jfif" },
+  { id: 22, year: "2025", img: "/aw22.jfif" },
+  { id: 23, year: "2025", img: "/aw23.jfif" },
+  { id: 24, year: "2025", img: "/aw24.jfif" },
+  { id: 25, year: "2025", img: "/aw25.jfif" },
+  { id: 26, year: "2025", img: "/aw26.jfif" },
+  { id: 27, year: "2025", img: "/aw27.jfif" },
+  { id: 28, year: "2025", img: "/aw28.jfif" },
+  { id: 29, year: "2025", img: "/aw29.jfif" },
+  { id: 30, year: "2025", img: "/aw30.jfif" },
+
 ];
 
 

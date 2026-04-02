@@ -73,6 +73,29 @@ const About = () => {
   
   </div>
 </section>
+
+
+
+    <section className="brand-section1">
+  <h2 className="brand-heading1">
+   Our International Clients From Russia , Australia,  UAE,  USA . We do International Trade Planning 
+  </h2>
+
+  <div className="brand-images1">
+    <img src="/hi17.jfif" alt="brand1" />
+    <img src="/hi18.jfif" alt="brand2" />
+    <img src="/hi19.jfif" alt="brand3" />
+    <img src="/hi20.jfif" alt="brand5" />
+    <img src="/hi21.jfif" alt="brand6" />
+     <img src="/hi22.jfif" alt="brand7" />
+    <img src="/hi23.jfif" alt="brand8" />
+    <img src="/hi24.jfif" alt="brand9" />
+     <img src="/hi25.jfif" alt="brand10" />
+      <img src="/hi26.jfif" alt="brand9" />
+     <img src="/hi27.jfif" alt="brand10" />
+  
+  </div>
+</section>
     </>
   );
 };

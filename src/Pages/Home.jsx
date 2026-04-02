@@ -457,6 +457,23 @@ const scaleData = [
 </section>
 
 
+
+ <section className="shooting-section3">
+      <h2 className="shooting-heading3">Our International Clients From Russia , Australia,  UAE,  USA . We do International Trade Planning </h2>
+
+      <div className="shooting-gallery3">
+        <img src="/hi11.jfif" alt="work1" />
+        <img src="/hi12.jfif" alt="work2" />
+        <img src="/hi13.jfif" alt="work3" />
+        <img src="/hi14.jfif" alt="work4" />
+          <img src="/hi15.jfif" alt="work5" />
+        <img src="/hi16.jfif" alt="work6" />
+      </div>
+
+      {/* <Link to="/shoting" className="more-link3">More →</Link> */}
+    </section>
+
+
  <section className="shooting-section">
       <h2 className="shooting-heading">Our Shooting Work</h2>
 

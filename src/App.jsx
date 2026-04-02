@@ -44,8 +44,9 @@ const App = () => {
   return (
     <React.StrictMode>
       <Router>
+         <ScrollToTop />
         <Navbar />
-        <ScrollToTop />
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
