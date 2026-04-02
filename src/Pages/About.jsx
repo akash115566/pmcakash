@@ -96,6 +96,65 @@ const About = () => {
   
   </div>
 </section>
+
+
+   <section className="brand-section4">
+  <h2 className="brand-heading4">
+    Our Office Events and Celebrations
+  </h2>
+
+  <div className="brand-images4">
+  <img src="/ab11.jfif" alt="brand11" />
+<img src="/ab12.jfif" alt="brand12" />
+<img src="/ab13.jfif" alt="brand13" />
+<img src="/ab14.jfif" alt="brand14" />
+<img src="/ab15.jfif" alt="brand15" />
+<img src="/ab16.jfif" alt="brand16" />
+<img src="/ab17.jfif" alt="brand17" />
+<img src="/ab18.jfif" alt="brand18" />
+<img src="/ab19.jfif" alt="brand19" />
+<img src="/ab20.jfif" alt="brand20" />
+<img src="/ab21.jfif" alt="brand21" />
+<img src="/ab22.jfif" alt="brand22" />
+<img src="/ab23.jfif" alt="brand23" />
+<img src="/ab24.jfif" alt="brand24" />
+<img src="/ab25.jfif" alt="brand25" />
+<img src="/ab26.jfif" alt="brand26" />
+<img src="/ab27.jfif" alt="brand27" />
+<img src="/ab28.jfif" alt="brand28" />
+<img src="/ab29.jfif" alt="brand29" />
+<img src="/ab30.jfif" alt="brand30" />
+<img src="/ab31.jfif" alt="brand31" />
+<img src="/ab32.jfif" alt="brand32" />
+<img src="/ab33.jfif" alt="brand33" />
+<img src="/ab34.jfif" alt="brand34" />
+<img src="/ab35.jfif" alt="brand35" />
+<img src="/ab36.jfif" alt="brand36" />
+<img src="/ab37.jfif" alt="brand37" />
+<img src="/ab38.jfif" alt="brand38" />
+<img src="/ab39.jfif" alt="brand39" />
+<img src="/ab40.jfif" alt="brand40" />
+<img src="/ab41.jfif" alt="brand41" />
+<img src="/ab42.jfif" alt="brand42" />
+<img src="/ab43.jfif" alt="brand43" />
+<img src="/ab44.jfif" alt="brand44" />
+<img src="/ab45.jfif" alt="brand45" />
+<img src="/ab46.jfif" alt="brand46" />
+<img src="/ab47.jfif" alt="brand47" />
+<img src="/ab48.jfif" alt="brand48" />
+<img src="/ab49.jfif" alt="brand49" />
+<img src="/ab50.jfif" alt="brand50" />
+<img src="/ab51.jfif" alt="brand51" />
+<img src="/ab52.jfif" alt="brand52" />
+<img src="/ab53.jfif" alt="brand53" />
+<img src="/ab54.jfif" alt="brand54" />
+<img src="/ab55.jfif" alt="brand55" />
+<img src="/ab56.jfif" alt="brand56" />
+<img src="/ab57.jfif" alt="brand57" />
+<img src="/ab58.jfif" alt="brand58" />
+  
+  </div>
+</section>
     </>
   );
 };
