@@ -46,6 +46,7 @@ const Navbar = () => {
           <li><Link to="/gallery" onClick={handleLinkClick}>Gallery</Link></li>
           <li><Link to="/client" onClick={handleLinkClick}>Clients</Link></li>
           <li><Link to="/contact" onClick={handleLinkClick}>Contact</Link></li>
+          <li><Link to="/founder" onClick={handleLinkClick}>Founder</Link></li>
           <li className="quote-btn">
             <Link to="/quote" onClick={handleLinkClick}>Get a Quote</Link>
           </li>
