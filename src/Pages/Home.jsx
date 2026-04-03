@@ -37,6 +37,28 @@ const data = [
 ];
 
 
+const videos = [
+  "RwVsjv9HFFA",
+  "yfJfRvQ-idY",
+  "xRKmC5FswRE",
+  "4xodRp7ToL8",
+  "jL9f1NKBCPU",
+  "Pj5YABKGrXU",
+  "yZLfOsVg18U",
+  "AIlOByX9eTQ",
+  "90LBnVab-rQ",
+  "_tbQVrGvUpg",
+  "_vM6n_HLnzE",
+  "DFS9rp-M8C0",
+  "ekyvq5SJA7I",
+  "ISZYnWfUDjo",
+  "G7y6tQX3O2k",
+  "sf78FVLkNmo",
+  "kJnX3Lu8-Fw",
+  "e1kl1BukhW4"
+];
+
+
 
 
 
@@ -455,6 +477,25 @@ const scaleData = [
     ))}
   </div>
 </section>
+
+
+
+ <section className="tvc-section">
+      <h2 className="tvc-heading">Our TVC Advt Work</h2>
+
+      <div className="tvc-grid">
+        {videos.map((id, index) => (
+          <div className="video-card" key={index}>
+            <iframe
+              src={`https://www.youtube.com/embed/${id}`}
+              title={`video-${index}`}
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
+      </div>
+    </section>
 
 
 

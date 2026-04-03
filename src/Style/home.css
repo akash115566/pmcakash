@@ -217,6 +217,73 @@ html, body, #root {
 
 
 
+.tvc-section {
+  padding: 60px 5%;
+  background: #111;
+  text-align: center;
+}
+
+/* Heading */
+.tvc-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+/* Grid Layout */
+.tvc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Video Card */
+.video-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .tvc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-card iframe {
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .tvc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tvc-heading {
+    font-size: 2rem;
+  }
+
+  .video-card iframe {
+    height: 180px;
+  }
+}
+
+
+
+
 
 
 .shooting-section3 {
