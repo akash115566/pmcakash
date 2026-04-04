@@ -479,6 +479,45 @@ const scaleData = [
 </section>
 
 
+ <section className="hero-section">
+
+      <div className="hero-inner">
+
+        {/* LEFT IMAGE */}
+        <div className="hero-left">
+          <img
+            src="./mt1.webp"
+            alt="Business Care"
+            className="hero-image"
+          />
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div className="hero-right">
+       {/* <Link to="/pooja-sharma-business-care">  <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2></Link>  */}
+       <Link to="/pooja-sharma-business-care">  <h2 className="hero-title" style={{fontWeight:"500"}}>Business Care Founder</h2></Link> 
+
+          <h3 className="coach-names">Ms. Pooja Sharma – Founder of Business Care TV Show <br/><span style={{color:"#340303"}}>&</span><br />Co-Founder Mr. Ankur Bansal</h3>
+
+          <p className="coach-subtitle">CELEBRITY COACHES</p>
+
+          <p className="hero-text1">
+            अब बदलेगा इंडिया का बिज़नेस, आ गया है Business Care,<br />
+            पुरानी पद्धति छोड़ो नयी रणनीति अपनाओ
+          </p>
+
+          <p className="hero-text">
+            Are you a Business Owner Trying to Increase Sales?
+            We are Here to Plan your Marketing Strategy
+          </p>
+
+          <Link to="/contact" className="btn-primary">For Appointment</Link>
+        </div>
+      </div>
+      </section>
+
+
+
 
  <section className="tvc-section">
       <h2 className="tvc-heading">Our TVC Advt Work</h2>

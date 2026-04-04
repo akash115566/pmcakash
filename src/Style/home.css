@@ -177,6 +177,87 @@ html, body, #root {
 }
 
 
+.hero-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #EBB02D;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-left, .hero-right {
+  width: 45%;
+  min-width: 300px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+}
+.coach-names{
+  font-size: 3rem;
+  color: rgb(87, 23, 23);
+  font-weight: 700;
+}
+.coach-subtitle{
+    font-size: 20px;
+    width: 250px;
+    padding: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(87, 23, 23);
+    color:  rgb(87, 23, 23);
+}
+.hero-text1{
+    font-size: 45px;
+    word-spacing: 0.001px;
+    color:  rgb(87, 23, 23);
+    font-weight: 500;
+}
+.hero-text{
+    font-size: 20px;
+    width: 100%;
+    word-spacing: 0.001px;
+    color:  rgb(87, 23, 23);
+    font-weight: 400;
+}
+.hero-title{
+    text-decoration: underline;
+    /* word-spacing: 0.1px; *
+    /* color:rgb(87, 23, 23) ; */
+    color: #111;
+    font-size: 1.5rem;
+}
+.btn-primary {
+  padding: 12px ;
+  width: 200px;
+  background: #ff5c00;
+  border: none;
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+
+
+
 
 
 /* ========================= */

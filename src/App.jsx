@@ -74,7 +74,7 @@ const App = () => {
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/legal" element={<Legal />} />
-          <Route path="/founder" element={<Founder />} />
+          <Route path="/pooja-sharma-business-care" element={<Founder />} />
           <Route path="/watch" element={<Watch />} />
           <Route path="/stadium-Branding" element={<StadiumBranding />} />
           <Route path="/quote" element={<Quote />} />
