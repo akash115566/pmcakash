@@ -179,8 +179,8 @@ html, body, #root {
 
 .hero-section {
   width: 100%;
-  padding: 80px 20px;
-  background-color: #EBB02D;
+  padding: 40px 20px;
+  background-color: #111;
 }
 
 .hero-inner {
@@ -209,7 +209,9 @@ html, body, #root {
 }
 .coach-names{
   font-size: 3rem;
-  color: rgb(87, 23, 23);
+  /* color: rgb(87, 23, 23); */
+  color: #fff;
+  line-height: 40px;
   font-weight: 700;
 }
 .coach-subtitle{
@@ -218,26 +220,26 @@ html, body, #root {
     padding: 16px;
     border-radius: 5px;
     border: 1px solid rgb(87, 23, 23);
-    color:  rgb(87, 23, 23);
+    color: #fff;
 }
 .hero-text1{
     font-size: 45px;
     word-spacing: 0.001px;
-    color:  rgb(87, 23, 23);
+    color:  #fff;
     font-weight: 500;
 }
 .hero-text{
     font-size: 20px;
     width: 100%;
     word-spacing: 0.001px;
-    color:  rgb(87, 23, 23);
+    color:  #fff;
     font-weight: 400;
 }
 .hero-title{
     text-decoration: underline;
     /* word-spacing: 0.1px; *
     /* color:rgb(87, 23, 23) ; */
-    color: #111;
+    color: #fff;
     font-size: 1.5rem;
 }
 .btn-primary {

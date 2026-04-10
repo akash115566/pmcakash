@@ -27,6 +27,7 @@
 .logo-section {
   display: flex;
   align-items: center;
+      margin-top: -30px;
   gap: 10px;
 }
 
@@ -45,7 +46,50 @@
 .nav-links {
   display: flex;
   list-style: none;
+      margin-top: -1px;
   gap: 20px;
+}
+/* Dropdown parent */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  min-width: 180px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Links inside dropdown */
+.dropdown-menu li {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hover link */
+.dropdown-menu li:hover {
+  background: #333;
 }
 
 .nav-links li a {

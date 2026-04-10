@@ -493,26 +493,39 @@ const scaleData = [
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="hero-right">
-       {/* <Link to="/pooja-sharma-business-care">  <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2></Link>  */}
-       <Link to="/pooja-sharma-business-care">  <h2 className="hero-title" style={{fontWeight:"500"}}>Business Care Founder</h2></Link> 
+  <div className="hero-right">
+  <Link to="/pooja-sharma-business-care">
+    <h2 className="hero-title" style={{ fontWeight: "500" }}>
+      Pooja Movie Creations (PMC) – Empowering Business Growth Through Media
+    </h2>
+  </Link>
 
-          <h3 className="coach-names">Ms. Pooja Sharma – Founder of Business Care TV Show <br/><span style={{color:"#340303"}}>&</span><br />Co-Founder Mr. Ankur Bansal</h3>
+  <h3 className="coach-names">
+    Ms. Pooja Sharma – Founder of Pooja Movie Creations & Business Care TV Show 
+    <br />
+    <span style={{ color: "#fff" }}>&</span>
+    <br />
+    Co-Founder Mr. Ankur Bansal
+  </h3>
 
-          <p className="coach-subtitle">CELEBRITY COACHES</p>
+  <p className="coach-subtitle">MEDIA | BRANDING | BUSINESS GROWTH</p>
 
-          <p className="hero-text1">
-            अब बदलेगा इंडिया का बिज़नेस, आ गया है Business Care,<br />
-            पुरानी पद्धति छोड़ो नयी रणनीति अपनाओ
-          </p>
+  <p className="hero-text1">
+    अब बदलेगा इंडिया का बिज़नेस! <br />
+    Pooja Movie Creations (PMC) के साथ अपने ब्रांड को दें नई पहचान। <br />
+    पुरानी मार्केटिंग छोड़ो, स्मार्ट मीडिया स्ट्रेटजी अपनाओ।
+  </p>
 
-          <p className="hero-text">
-            Are you a Business Owner Trying to Increase Sales?
-            We are Here to Plan your Marketing Strategy
-          </p>
+  <p className="hero-text">
+    PMC is a leading media & production platform helping startups, MSMEs, 
+    and business owners build strong brand presence through TV shows, 
+    digital promotions, and powerful storytelling.
+  </p>
 
-          <Link to="/contact" className="btn-primary">For Appointment</Link>
-        </div>
+  <Link to="/contact" className="btn-primary">
+   Your Appointment
+  </Link>
+</div>
       </div>
       </section>
 

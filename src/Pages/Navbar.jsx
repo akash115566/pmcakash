@@ -5,19 +5,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
- const handleLinkClick = () => {
-  setMenuOpen(false);
-
-  // 👇 force scroll top
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "instant", // ya "smooth"
-  });
-
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
-};
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
@@ -38,8 +28,18 @@ const Navbar = () => {
 
         {/* Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><Link to="/" onClick={handleLinkClick}>Home</Link></li>
-          <li><Link to="/about" onClick={handleLinkClick}>About Us</Link></li>
+          <li><Link to="/about" onClick={handleLinkClick}>Home</Link></li>
+         <li className="dropdown">
+ <Link to="/about" onClick={handleLinkClick}>
+    About Us ▾
+  </Link>
+
+  <ul className="dropdown-menu">
+    <li><Link to="/about/company">Company Profile</Link></li>
+    <li><Link to="/about/team">Our Team</Link></li>
+    <li><Link to="/about/mission">Mission & Vision</Link></li>
+  </ul>
+</li>
           <li><Link to="/service" onClick={handleLinkClick}>Services</Link></li>
           <li><Link to="/work" onClick={handleLinkClick}>Work</Link></li>
           <li><Link to="/award" onClick={handleLinkClick}>Awards</Link></li>
